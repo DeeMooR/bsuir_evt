@@ -1,0 +1,35 @@
+body {
+  margin: 0 20px 100px;
+}
+
+li {
+  margin: 0 0 5px 0;
+}
+li a {
+  color: cornflowerblue;
+}
+
+.film {
+  margin: 40px 0 0 0;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 100%;
+  margin: 0 0 10px 0;
+}
+.photos img {
+  width: calc((100% - 20px)/3);
+}
+
+td {
+  padding: 0 3px;
+}
+
+@media (max-width: 599.98px) {
+  .photos img {
+    width: 100%;
+  }
+}
