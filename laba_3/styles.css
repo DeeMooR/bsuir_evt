@@ -1,0 +1,99 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: cornflowerblue;
+  color: #f4f4f4;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #f4f4f4;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+section {
+  margin-bottom: 20px;
+}
+ 
+h1 {
+  text-align: center;
+  font-size: 36px;
+}
+
+figure {
+  text-align: center;
+}
+
+mark {
+  background-color: cornflowerblue;
+}
+
+figcaption {
+  margin-top: 10px;
+  font-style: italic;
+}
+
+aside {
+  background-color: #f4f4f4;
+  padding: 20px 10px;
+}
+
+details {
+  background-color: #eee;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+details summary {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+blockquote {
+  background-color: #f0f0f0;
+  border-left: 5px solid #666;
+  margin: 20px 0;
+  padding: 15px;
+  font-style: italic;
+}
+
+blockquote cite {
+  display: block;
+  margin-top: 10px;
+  text-align: right;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  color: #f4f4f4;
+  background-color: #333;
+  padding: 15px 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+}
