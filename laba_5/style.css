@@ -1,0 +1,99 @@
+
+/*--------- FONTS ----------*/
+
+@font-face {
+  font-family: "MyFont";
+  src: url("./fonts/MyFont.ttf") format("truetype");
+  font-style: normal; 
+  font-weight: 400; 
+}
+
+@font-face {
+  font-family: "Bartina";
+  src: url("./fonts/Bartina.ttf") format("truetype");
+  font-style: normal; 
+  font-weight: 400; 
+}
+
+@font-face {
+  font-family: "Rosarium";
+  src: url("./fonts/Rosarium.ttf") format("truetype");
+  font-style: normal; 
+  font-weight: 400; 
+}
+
+/*--------- CONST ----------*/
+
+:root {
+  --font-main: 'Times New Roman';
+  --font-1: 'MyFont', 'Georgia';
+  --font-2: 'Bartina', 'Georgia';
+  --font-3: 'Rosarium', 'Georgia';
+  
+  --white: #FFFFFF;
+  --black: #000000;
+  --background: #f0ffff;
+}
+
+/*--------- STYLES ---------*/
+
+#film1 .description {
+  font-family: var(--font-1);
+  text-align: left;
+}
+#film2 .description {
+  font-family: var(--font-2);
+  text-align: center;
+}
+#film3 .description {
+  font-family: var(--font-3);
+  text-align: justify;
+}
+
+body {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto 100px;
+  padding: 0 20px;
+  background-color: var(--background);
+  font-family: var(--font-main);
+}
+
+li {
+  margin: 0 0 5px -20px;
+  list-style: none;
+}
+li a {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.film {
+  margin: 40px 0 0 0;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 100%;
+  margin: 0 0 10px 0;
+}
+.photos img {
+  width: calc((100% - 20px)/3);
+  border-radius: 7px;
+}
+
+td {
+  padding: 0 3px;
+}
+
+.strong {
+  font-weight: 600;
+}
+
+@media (max-width: 599.98px) {
+  .photos img {
+    width: 100%;
+  }
+}
