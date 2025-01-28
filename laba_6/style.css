@@ -26,7 +26,7 @@ button {
   cursor: pointer;
 }
 button:hover {
-  animation: none;
+  animation-play-state: paused;
   background-color: green;
 }
 
