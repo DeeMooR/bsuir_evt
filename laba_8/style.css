@@ -1,0 +1,126 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: rgb(52, 206, 142);
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+/* ----------- GRID  ----------- */
+
+.grid {
+  display: grid;  
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid article {
+  padding: 10px;
+  margin: 10px;
+  background: #10e9d72d;
+}
+
+.grid article:nth-child(1) {
+  grid-row: span 3;
+}
+.grid article:nth-child(3) {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+.grid article:nth-child(9) {
+  grid-column: span 2;
+}
+
+/* ----------- TUTORIAL  ----------- */
+
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+
+.tutorial {
+  margin: 80px 10px;
+}
+
+.tutorial article {
+  margin: 40px 0 0 0;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  max-width: 800px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  padding: 0 30px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 3px solid #8fbc8f;
+  background-color: #fff;
+}
+button:not(.active):hover {
+  background-color: #8fbc8f5f;
+}
+.active {
+  background-color: #8fbc8f;
+  color: #fff;
+}
+
+.parent {
+  display: grid;
+  grid-template-rows: repeat(2, 100px);
+  grid-template-columns: repeat(2, 100px);
+  justify-items: start;
+  grid-auto-flow: row;
+  max-width: 800px;
+  margin: 20px 0 0 0;
+  padding: 10px 17px 17px 10px;
+  border: 2px solid #8fbc8fd2;
+}
+.child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #10e9d782;
+  border: 5px solid #fff;
+  font-size: 20px;
+}
+
+#justify-items .parent {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#justify-items .child {
+  width: auto;
+  padding: 0 20px;
+}
+
+#grid-auto-flow .parent {
+  grid-template-rows: repeat(3, 100px);
+  grid-template-columns: repeat(3, 100px);
+}
