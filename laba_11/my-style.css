@@ -32,7 +32,7 @@ blockquote.blockquote {
 }
 
 .article img {
-  min-height: 200px;
+  min-height: 120px;
 }
 .article:nth-of-type(odd) img {
   float: left;
@@ -51,9 +51,9 @@ blockquote.blockquote {
 .word {
   position: sticky;
   top: 40px;
-  width: fit-content;
   padding: 5px 0;
   width: 70px;
+  height: auto;
   background-color: rgb(240, 128, 128);
 }
 .word.second {
