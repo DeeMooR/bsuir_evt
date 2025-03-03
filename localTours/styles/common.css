@@ -34,6 +34,7 @@
   --grey: #7D7D7D;
   --grey-dark: #2F2F2F;
   --grey-light: #F7F7F7;
+  --grey-2:  #e5e5ea;
 }
 
 /*--------- NULLING STYLE ----------*/
@@ -125,4 +126,15 @@ button:hover {
 .btnSmall {
   height: 52px;
   min-width: 130px;
+}
+
+.footer {
+  border-top: 2px solid var(--grey-2);
+  background-color: var(--grey-light);
+}
+.footer__text {
+  padding: 15px 0 10px;
+  font-size: 12px;
+  text-align: center;
+  color: var(--grey);
 }

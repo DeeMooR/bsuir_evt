@@ -195,27 +195,29 @@
       <div class="comments">
         <div class="comments__card">
           <div class="card__content">
-            <div class="card__image">
-              <img src="./assets/images/userPhoto_1.png" alt="userPhoto">
+            <div class="card__imageContainer">
+              <img class="card__image" src="./assets/images/userPhoto_1.png" alt="userPhoto">
             </div>
-            <p class="card__text">Vel officiis dolor ea illo aut eligendi ullam non laudantium magnam et recusandae molestiae sit iure unde aut voluptate quaerat. Id sunt provident quo possimus impedit vel doloremque obcaecati qui ullam consectetur et ipsum omnis.</p>
+            <p class="card__text">Comment 1 officiis dolor ea illo aut eligendi ullam non laudantium magnam et recusandae molestiae sit iure unde aut voluptate quaerat. Id sunt provident quo possimus impedit vel doloremque obcaecati qui ullam consectetur et ipsum omnis.</p>
             <p class="card__author">Christine Beckam - Designer</p>
           </div>
           <div class="card__button card__btnLeft">←</div>
           <div class="card__button card__btnRight">→</div>
         </div>
         <div class="comments__pagination">
-          <hr class="pagination_1 pagination__active">
-          <hr class="pagination_2">
-          <hr class="pagination_3">
-          <hr class="pagination_4">
-          <hr class="pagination_5">
+          <hr class="pagination__active" id="pagination_1"></hr>
+          <hr id="pagination_2"></hr>
+          <hr id="pagination_3"></hr>
+          <hr id="pagination_4"></hr>
+          <hr id="pagination_5"></hr>
+          <hr id="pagination_6"></hr>
         </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-
+    <p class="footer__text">Copyright @ Travel 2025. All Rights Reserved.</p>
   </footer>
+  <script src="./scripts/comments.js" type="module"></script>
 </body>
 </html>
