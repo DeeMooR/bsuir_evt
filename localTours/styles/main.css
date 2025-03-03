@@ -1,29 +1,23 @@
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .main .section-quoteBlock {
   background: url("../assets/images/main.png") 0 0/cover no-repeat;
   min-height: 900px;
 }
-.main .section-quoteBlock .header {
+.main .section-quoteBlock .quoteBlock__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 60px 0 0 0;
 }
-.main .section-quoteBlock .header .header__nav {
+.main .section-quoteBlock .quoteBlock__header .quoteBlock__headerNav {
   display: flex;
   gap: 50px;
 }
-.main .section-quoteBlock .header .header__nav a {
+.main .section-quoteBlock .quoteBlock__header .quoteBlock__headerNav a {
   position: relative;
   color: var(--white);
   font-weight: 500;
 }
-.main .section-quoteBlock .header .header__nav a.active:before {
+.main .section-quoteBlock .quoteBlock__header .quoteBlock__headerNav a.active:before {
   position: absolute;
   content: "";
   bottom: -7px;

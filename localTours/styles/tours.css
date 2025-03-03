@@ -1,0 +1,8 @@
+.main .section-tours {
+  margin: 60px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px 50px;
+}

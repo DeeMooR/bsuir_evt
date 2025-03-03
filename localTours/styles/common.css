@@ -128,8 +128,52 @@ button:hover {
   min-width: 130px;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  background-color: var(--blue-light);
+}
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.header__nav {
+  display: flex;
+  gap: 50px;
+}
+.header__nav a {
+  position: relative;
+  color: var(--white);
+  font-weight: 500;
+}
+.header__nav a.active:before {
+  position: absolute;
+  content: '';
+  bottom: -7px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  height: 2px;
+  width: 80%;
+  background-color: var(--orange);
+  border-radius: 1px;
+}
+
 .footer {
-  border-top: 2px solid var(--grey-2);
+  border-top: 1px solid var(--grey-2);
   background-color: var(--grey-light);
 }
 .footer__text {

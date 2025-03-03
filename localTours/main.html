@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/icons/logo.svg" />
   <link rel="stylesheet" href="./styles/common.css">
   <link rel="stylesheet" href="./styles/tour.css">
   <link rel="stylesheet" href="./styles/main.css">
@@ -12,14 +13,14 @@
   <main class="main">
     <section class="section-quoteBlock">
       <div class="wrapper">
-        <header class="header">
-          <div class="header__logo">
+        <header class="quoteBlock__header">
+          <a class="header__logo" href="#">
             <img src="./assets/icons/logo.svg" alt="logo">
-          </div>
-          <div class="header__nav">
-            <a class="active" href="/">Home</a>
-            <a href="/tours">Tours</a>
-            <a href="/about">About us</a>
+          </a>
+          <div class="quoteBlock__headerNav">
+            <a class="active" href="#">Home</a>
+            <a href="/tours.html">Tours</a>
+            <a href="/about.html">About us</a>
           </div>
           <button class="header__button btnSmall">
             Sign In
@@ -28,7 +29,7 @@
         <div class="quoteBlock">
           <img class="quoteBlock__line" src="./assets/icons/line.svg" alt="line">
           <h1 class="quoteBlock__quote">No matter where you’re going to, we’ll take you there</h1>
-          <button class="quoteBlock__button">All Tours</button>
+          <button class="quoteBlock__button" onclick="window.location.href='tours.html'">All Tours</button>
         </div>
       </div>
     </section>

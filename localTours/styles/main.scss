@@ -1,19 +1,13 @@
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 .main {
   .section-quoteBlock {
     background: url('../assets/images/main.png') 0 0/cover no-repeat;
     min-height: 900px;
-    .header {
+    .quoteBlock__header {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 60px 0 0 0;
-      .header__nav {
+      .quoteBlock__headerNav {
         display: flex;
         gap: 50px;
         a {
