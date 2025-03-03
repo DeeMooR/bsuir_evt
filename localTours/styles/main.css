@@ -103,3 +103,104 @@
   align-items: center;
   gap: 50px;
 }
+.main .section-amazing {
+  display: flex;
+  align-items: center;
+  background: url("../assets/images/amazing.png") 0 0/cover no-repeat;
+  min-height: 300px;
+  margin: 80px 0 0 0;
+}
+.main .section-amazing .amazing__content {
+  position: relative;
+  margin-left: calc((100vw - 1000px) / 2);
+  padding: 0 20px;
+}
+.main .section-amazing .amazing__content .amazing__text {
+  font-weight: 600;
+  font-size: 38px;
+  text-transform: capitalize;
+  color: var(--white);
+}
+.main .section-amazing .amazing__content .amazing__text::after {
+  content: url("../assets/icons/amazing_line.svg");
+  position: absolute;
+  bottom: -40px;
+  right: -110px;
+  transform: rotate(-10deg) scale(0.8);
+}
+.main .section-comments {
+  background-color: var(--grey-light);
+  padding: 110px 0 0 0;
+}
+.main .section-comments h2 {
+  margin: 20px 0 0 0;
+}
+.main .section-comments .comments {
+  margin: 95px auto 100px;
+}
+.main .section-comments .comments .comments__card {
+  position: relative;
+  width: 100%;
+  max-width: 540px;
+  padding: 0 50px;
+  margin: 0 auto;
+  background-color: var(--white);
+  border-radius: 18px;
+}
+.main .section-comments .comments .comments__card .card__button {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--grey);
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  cursor: pointer;
+}
+.main .section-comments .comments .comments__card .card__button.card__btnLeft {
+  left: -25px;
+}
+.main .section-comments .comments .comments__card .card__button.card__btnRight {
+  right: -25px;
+}
+.main .section-comments .comments .comments__card .card__content {
+  position: relative;
+  padding: 90px 70px 33px;
+}
+.main .section-comments .comments .comments__card .card__content .card__image {
+  position: absolute;
+  top: -46px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  border-radius: 50%;
+  border: 5px solid var(--white);
+  box-shadow: 6px 14px 27px 0 rgba(0, 0, 0, 0.15), inset -4px 11px 18px 0 rgba(0, 0, 0, 0.25);
+}
+.main .section-comments .comments .comments__card .card__content .card__text {
+  position: relative;
+  font-size: 12px;
+  line-height: 200%;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: vat(--black);
+}
+.main .section-comments .comments .comments__card .card__content .card__text:before {
+  content: url("../assets/icons/quote.svg");
+  position: absolute;
+  top: -15px;
+  left: -25px;
+}
+.main .section-comments .comments .comments__card .card__content .card__author {
+  margin: 13px 0 0 0;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 200%;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: vat(--black);
+}
