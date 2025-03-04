@@ -209,6 +209,7 @@
           width: 25px;
           border-radius: 1px;
           background-color: var(--grey-2);
+          cursor: pointer;
           &.pagination__active {
             background-color: var(--orange);
           }

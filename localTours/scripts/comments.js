@@ -9,7 +9,12 @@ const cardAuthor = document.querySelector('.card__author');
 
 let activeComment = 1;
 
-const updateActivePagination = (oldId, obj) => {
+const updateComment = (oldId) => {
+  const obj = comments.find(item => item.id === activeComment);
+  cardImage.src = obj.image;
+  cardText.textContent = obj.text;
+  cardAuthor.textContent = obj.author;
+  
   const oldElement = document.querySelector(`#pagination_${oldId}`);
   const newElement = document.querySelector(`#pagination_${obj.id}`);
   oldElement.classList.remove('pagination__active');
@@ -21,11 +26,7 @@ btnRight.addEventListener('click', () => {
   if (activeComment === comments.length) activeComment = 1;
   else activeComment += 1;
 
-  const obj = comments.find(item => item.id === activeComment);
-  cardImage.src = obj.image;
-  cardText.textContent = obj.text;
-  cardAuthor.textContent = obj.author;
-  updateActivePagination(oldId, obj);
+  updateComment(oldId);
 })
 
 btnLeft.addEventListener('click', () => {
@@ -33,9 +34,17 @@ btnLeft.addEventListener('click', () => {
   if (activeComment === 1) activeComment = comments.length;
   else activeComment -= 1;
 
-  const obj = comments.find(item => item.id === activeComment);
-  cardImage.src = obj.image;
-  cardText.textContent = obj.text;
-  cardAuthor.textContent = obj.author;
-  updateActivePagination(oldId, obj);
+  updateComment(oldId);
 })
+
+const hrs = document.querySelectorAll('hr');
+
+hrs.forEach(element => {
+  element.addEventListener('click', () => {
+    const oldId = activeComment;
+    const elId = event.currentTarget.id;
+    activeComment = +elId.split('_')[1];
+    
+    updateComment(oldId);
+  });
+});

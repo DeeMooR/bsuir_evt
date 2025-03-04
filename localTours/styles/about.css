@@ -60,16 +60,16 @@ textarea::placeholder {
   gap: 60px;
 }
 .main .section-contacts .contacts .contacts__form {
-  width: 45%;
+  width: 44%;
   display: flex;
   flex-direction: column;
   gap: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.1);
-  padding: 50px 40px 75px;
+  padding: 50px 40px;
 }
 .main .section-contacts .contacts .contacts__content {
-  width: 55%;
+  width: 56%;
 }
 .main .section-contacts .contacts .contacts__content .content__title {
   text-align: left;
