@@ -78,14 +78,12 @@ h2 {
   font-weight: 700;
   font-size: 40px;
   text-align: center;
-  text-transform: capitalize;
   color: var(--blue);
 }
 
 h3 {
   font-weight: 700;
   font-size: 26px;
-  text-transform: capitalize;
   color: var(--grey-dark);
 }
 
@@ -100,7 +98,6 @@ h5 {
   font-weight: 600;
   font-size: 16px;
   text-align: center;
-  text-transform: uppercase;
   color: var(--orange);
 }
 
@@ -116,7 +113,7 @@ button {
   background-color: var(--orange);
   color: var(--white);
   border-radius: 10px;
-  box-shadow: 0 20px 35px 0 rgba(223, 105, 81, 0.15);
+  box-shadow: 0 12px 30px 0 rgba(223, 105, 81, 0.15);
   transition: all 0.2s ease-in-out;
 }
 button:hover {
@@ -126,6 +123,37 @@ button:hover {
 .btnSmall {
   height: 52px;
   min-width: 130px;
+}
+
+input,
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 100%;
+  padding: 0 20px;
+  background-color: var(--white);
+  border: 1px solid var(--grey);
+  border-radius: 5px;
+}
+textarea {
+  height: 92px;
+  width: 100%;
+  padding: 21px 24px;
+  background-color: var(--white);
+  border: 1px solid var(--grey);
+  border-radius: 5px;
+  resize: none;
+}
+input:focus,
+textarea:focus {
+  border: 1px solid var(--orange);
+}
+input::placeholder,
+textarea::placeholder {
+  color: var(--grey);
+  font-size: 13px;
 }
 
 body {

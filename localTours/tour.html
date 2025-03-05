@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/icons/logo.svg" />
+  <link rel="stylesheet" href="./styles/common/common.css">
+  <link rel="stylesheet" href="./styles/common/tour.css">
+  <link rel="stylesheet" href="./styles/tour.css">
+  <title>Local Tours</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrapper">
+      <a class="header__logo" href="/main.html">
+        <img src="./assets/icons/logo.svg" alt="logo">
+      </a>
+      <div class="header__nav">
+        <a href="/main.html">Home</a>
+        <a href="/tours.html">Tours</a>
+        <a href="/about.html">About us</a>
+      </div>
+      <button class="header__button btnSmall">
+        Sign In
+      </button>
+    </div>
+  </header>
+  <main class="main">
+    <section class="section-tour">
+      <div class="wrapper">
+        <div class="tour">
+          <div class="tour__image">
+            <img src="./assets/images/defaultImage.jpg" alt="image">
+          </div>
+          <div class="tour__card">
+            <div class="tour__titleStars">
+              <h3 class="tour__title">Title...</h3>
+              <div class="tour__stars">
+                <img src="../assets/icons/star_fill.svg" class="tour__star" alt="star_fill">
+                <img src="../assets/icons/star_fill.svg" class="tour__star" alt="star_fill">
+                <img src="../assets/icons/star_fill.svg" class="tour__star" alt="star_fill">
+                <img src="../assets/icons/star_fill.svg" class="tour__star" alt="star_fill">
+                <img src="../assets/icons/star_fill.svg" class="tour__star" alt="star_fill">
+              </div>
+            </div>
+            <div class="tour__costs">
+              <p class="tour__currentCost">0 $</p>
+              <p class="tour__oldCost">0 $</p>
+            </div>
+            <div class="tour__description">Description...</div>
+            <div class="tour__iconGroups">
+              <div class="iconGroup">
+                <img src="./assets/icons/calender.svg" class="iconGroup__icon" alt="calender">
+                <p class="iconGroup__text" id="days">0 Days</p>
+              </div>
+              <div class="iconGroup">
+                <img src="./assets/icons/avatar.svg" class="iconGroup__icon" alt="avatar">
+                <p class="iconGroup__text" id="people">0 People Going</p>
+              </div>
+              <div class="iconGroup">
+                <img src="./assets/icons/location.svg" class="iconGroup__icon" alt="location">
+                <p class="iconGroup__text" id="location">Location</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-formBlock">
+      <div class="wrapper">
+        <div class="formBlock">
+          <div class="formBlock__image">
+            <img src="./assets/images/contactsImage.jpg" alt="contactsImage">
+          </div>
+          <form class="formBlock__form">
+            <h3 class="form__title">Book a tour</h3>
+            <div class="form__fields">
+              <input id="input-name" type="text" placeholder="Your Name">
+              <input id="input-email" type="email" placeholder="Your Email">
+              <div class="form__phoneDate">
+                <input class="form__phone" id="input-phone" type="phone" placeholder="Your Phone">
+                <input class="form__date" id="input-date" type="date" placeholder="Select Date">
+              </div>
+              <button class="form__button btnSmall">Book</button>
+            </div>
+            <p class="form__agree">By clicking the button, you agree to the processing of personal data.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p class="footer__text">Copyright @ Travel 2025. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

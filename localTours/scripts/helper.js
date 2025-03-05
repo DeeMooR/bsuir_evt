@@ -11,7 +11,7 @@ export const createTourCard = (tour) => {
       </div>
       <div class="iconGroup">
         <img src="./assets/icons/avatar.svg" class="iconGroup__icon" alt="avatar">
-        <p class="iconGroup__text">${tour.people}</p>
+        <p class="iconGroup__text">${tour.people} Going</p>
       </div>
     </div>
     <div class="tour__titleStars">

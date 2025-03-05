@@ -1,71 +1,79 @@
-.tour__card {
-  max-width: 340px;
+.wrapper {
+  max-width: 900px;
 }
-.tour__card .tour__image {
+
+.main {
+  flex: 1;
+  margin: 60px 0;
+}
+.main .section-tour .tour {
+  display: flex;
+  gap: 60px;
+}
+.main .section-tour .tour .tour__image {
+  width: 40%;
+}
+.main .section-tour .tour .tour__image img {
   width: 100%;
 }
-.tour__card .tour__iconGroups {
+.main .section-tour .tour .tour__card {
+  width: 60%;
+  max-width: none;
+}
+.main .section-tour .tour .tour__card .tour__iconGroups {
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+  gap: 10px;
+}
+.main .section-tour .tour .tour__card .tour__iconGroups img {
+  width: 20px;
+}
+.main .section-formBlock {
+  margin: 80px 0 0 0;
+}
+.main .section-formBlock .formBlock {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 60px;
+}
+.main .section-formBlock .formBlock .formBlock__image {
+  width: 50%;
+  box-shadow: 6px 14px 27px 0 rgba(0, 0, 0, 0.15), inset -4px 11px 18px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.main .section-formBlock .formBlock .formBlock__image img {
+  border-radius: 10px;
+  width: 100%;
+}
+.main .section-formBlock .formBlock .formBlock__form {
+  width: 50%;
+}
+.main .section-formBlock .formBlock .formBlock__form .form__title {
+  text-align: center;
+}
+.main .section-formBlock .formBlock .formBlock__form .form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   margin: 20px 0 0 0;
 }
-.tour__card .tour__iconGroups .iconGroup {
+.main .section-formBlock .formBlock .formBlock__form .form__fields .form__phoneDate {
   display: flex;
-  align-items: center;
-  gap: 8px;
+  gap: 15px;
 }
-.tour__card .tour__iconGroups .iconGroup .iconGroup__text {
+.main .section-formBlock .formBlock .formBlock__form .form__fields .form__phoneDate .form__phone {
+  flex: 3;
+}
+.main .section-formBlock .formBlock .formBlock__form .form__fields .form__phoneDate .form__date {
+  flex: 1;
+}
+.main .section-formBlock .formBlock .formBlock__form .form__fields .form__button {
+  height: 46px;
+}
+.main .section-formBlock .formBlock .formBlock__form .form__agree {
+  margin: 10px 0 0 0;
+  font-size: 10px;
+  text-align: center;
   color: var(--grey);
-}
-.tour__card .tour__titleStars {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 12px 0 0 0;
-}
-.tour__card .tour__titleStars .tour__title {
-  font-weight: 700;
-  font-size: 28px;
-  color: var(--grey-dark);
-}
-.tour__card .tour__titleStars .tour__stars {
-  display: flex;
-  gap: 3px;
-}
-.tour__card .tour__location {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 4px 0 0 0;
-}
-.tour__card .tour__location .location__text {
-  color: var(--grey);
-}
-.tour__card .tour__costs {
-  display: flex;
-  align-items: end;
-  gap: 18px;
-  margin: 7px 0 0 0;
-}
-.tour__card .tour__costs .tour__currentCost {
-  font-weight: 500;
-  font-size: 28px;
-  color: var(--orange);
-}
-.tour__card .tour__costs .tour__oldCost {
-  font-weight: 500;
-  font-size: 20px;
-  text-decoration: line-through;
-  color: var(--grey);
-}
-.tour__card .tour__description {
-  font-size: 12px;
-  letter-spacing: 0.05em;
-  line-height: 200%;
-  color: #000;
-  margin: 6px 0 0 0;
-}
-.tour__card .tour__button {
-  margin: 24px 0 0 0;
 }
