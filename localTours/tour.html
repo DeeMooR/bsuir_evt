@@ -6,6 +6,7 @@
   <link rel="icon" href="./assets/icons/logo.svg" />
   <link rel="stylesheet" href="./styles/common/common.css">
   <link rel="stylesheet" href="./styles/common/tour.css">
+  <link rel="stylesheet" href="./styles/common/modal.css">
   <link rel="stylesheet" href="./styles/tour.css">
   <title>Local Tours</title>
 </head>
@@ -20,7 +21,7 @@
         <a href="/tours.html">Tours</a>
         <a href="/about.html">About us</a>
       </div>
-      <button class="header__button btnSmall">
+      <button class="header__button btn btnSmall">
         Sign In
       </button>
     </div>
@@ -29,8 +30,8 @@
     <section class="section-tour">
       <div class="wrapper">
         <div class="tour">
-          <div class="tour__image">
-            <img src="./assets/images/defaultImage.jpg" alt="image">
+          <div class="tour__imageBlock">
+            <img class="tour__image" src="./assets/images/defaultImage.jpg" alt="image">
           </div>
           <div class="tour__card">
             <div class="tour__titleStars">
@@ -81,7 +82,7 @@
                 <input class="form__phone" id="input-phone" type="phone" placeholder="Your Phone">
                 <input class="form__date" id="input-date" type="date" placeholder="Select Date">
               </div>
-              <button class="form__button btnSmall">Book</button>
+              <button class="form__button btn btnSmall">Book</button>
             </div>
             <p class="form__agree">By clicking the button, you agree to the processing of personal data.</p>
           </form>
@@ -92,5 +93,24 @@
   <footer class="footer">
     <p class="footer__text">Copyright @ Travel 2025. All Rights Reserved.</p>
   </footer>
+  <div class='modal modal__success'>
+    <div class="modal__wrapper">
+      <div class="modal__icon">✔</div>
+      <p class='modal__text'>You have successfully registered for the tour</p>
+      <button class='modal__cross'>
+        <img src='./assets/icons/cross.svg' alt="close" />
+      </button>
+    </div>
+  </div>
+  <div class='modal modal__error'>
+    <div class="modal__wrapper">
+      <div class="modal__icon">!</div>
+      <p class='modal__text'>All fields must be filled in</p>
+      <button class='modal__cross'>
+        <img src='./assets/icons/cross.svg' alt="close" />
+      </button>
+    </div>
+  </div>
+  <script src="./scripts/tour.js" type="module"></script>
 </body>
 </html>

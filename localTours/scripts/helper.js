@@ -35,15 +35,33 @@ export const createTourCard = (tour) => {
     <div class="tour__description">
       ${tour.description}
     </div>
-    <button class="tour__button btnSmall" id="tour-${tour.id}">Explore Now</button>
+    <button class="tour__button btn btnSmall" id="tour-${tour.id}">Explore Now</button>
   `;
   return tourCard;
 }
 
 export const handleTourClick = (event) => {
-  console.log(event)
   const buttonId = event.currentTarget.id;
   const tourId = +buttonId.split('-')[1];
   localStorage.setItem('tourId', tourId);
   window.location.href = `/tour.html`;
+}
+
+export const showModal = (modal) => {
+  modal.style.display = "block";
+  setTimeout(() => {
+    modal.style.display = "none";
+  }, 3000);
+}
+
+export const saveForm = (obj, field) => {
+  let array = JSON.parse(localStorage.getItem(field)) ?? [];
+  array.push(obj);
+  localStorage.setItem(field, JSON.stringify(array));
+}
+
+export const hiddenModals = (modals) => {
+  modals.forEach(modal => {
+    modal.style.display = "none";
+  })
 }

@@ -1,6 +1,6 @@
 .main {
   .section-quoteBlock {
-    background: url('../assets/images/main.png') 0 0/cover no-repeat;
+    background: url('../assets/images/main.jpg') 0 0/cover no-repeat;
     min-height: 900px;
     .quoteBlock__header {
       display: flex;
@@ -64,7 +64,6 @@
       margin: 20px 0 0 0;
       display: flex;
       justify-content: space-between;
-      align-items: center;
       .services__card {
         border-radius: 36px;
         padding: 18px 26px 32px;
@@ -74,6 +73,7 @@
           box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0), 0 8px 7px 0 rgba(0, 0, 0, 0.01), 0 20px 13px 0 rgba(0, 0, 0, 0.01), 0 39px 25px 0 rgba(0, 0, 0, 0.01), 0 65px 47px 0 rgba(0, 0, 0, 0.02), 0 100px 80px 0 rgba(0, 0, 0, 0.02);
         }
         .services__icon {
+          height: 80px;
           margin: 0 auto;
         }
         .services__title {

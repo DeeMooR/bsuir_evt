@@ -1,15 +1,52 @@
 .main {
   flex: 1;
-  .section-image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: url('../assets/images/about.png') 0 100%/cover no-repeat;
-    height: 400px;
-    h1 {
-      font-size: 100px;
-      letter-spacing: 0.01em;
-      color: var(--white);
+  .section-imageBlock {
+    background: url('../assets/images/about.jpg') 0 55%/cover no-repeat;
+    height: 600px;
+    .wrapper {
+      height: 100%;
+      .imageBlock {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        .imageBlock__header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 60px 0 0 0;
+          .imageBlock__headerNav {
+            display: flex;
+            gap: 50px;
+            a {
+              position: relative;
+              color: var(--white);
+              font-weight: 500;
+              &.active:before {
+                position: absolute;
+                content: '';
+                bottom: -7px;
+                left: 50%;
+                transform: translate(-50%, 0);
+                height: 2px;
+                width: 80%;
+                background-color: var(--orange);
+                border-radius: 1px;
+              }
+            }
+          }
+        }
+        .imageBlock__content {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          h1 {
+            font-size: 100px;
+            letter-spacing: 0.01em;
+            color: var(--white);
+          }
+        }
+      }
     }
   }
   .section-contacts {

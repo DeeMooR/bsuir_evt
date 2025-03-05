@@ -9,6 +9,8 @@ const cardAuthor = document.querySelector('.card__author');
 
 let activeComment = 1;
 
+// Click button
+
 const updateComment = (oldId) => {
   const obj = comments.find(item => item.id === activeComment);
   cardImage.src = obj.image;
@@ -36,6 +38,8 @@ btnLeft.addEventListener('click', () => {
 
   updateComment(oldId);
 })
+
+// Click on pagination
 
 const hrs = document.querySelectorAll('hr');
 

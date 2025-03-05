@@ -10,10 +10,10 @@
   display: flex;
   gap: 60px;
 }
-.main .section-tour .tour .tour__image {
+.main .section-tour .tour .tour__imageBlock {
   width: 40%;
 }
-.main .section-tour .tour .tour__image img {
+.main .section-tour .tour .tour__imageBlock img {
   width: 100%;
 }
 .main .section-tour .tour .tour__card {

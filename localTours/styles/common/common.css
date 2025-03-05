@@ -27,14 +27,16 @@
   --white: #FFFFFF;
   --black: #000;
   --blue: #1E1D4C;
-  --blue-light: #5E6282;
-  --orange: #DF6951;
-  --orange-hover: #df7763;
-
   --grey: #7D7D7D;
   --grey-dark: #2F2F2F;
   --grey-light: #F7F7F7;
   --grey-2:  #e5e5ea;
+  
+  --blue-light: #5E6282;
+  --orange: #DF6951;
+  --orange-hover: #df7763;
+  --success: #4DB84D;
+  --error: #DF5A5A;
 }
 
 /*--------- NULLING STYLE ----------*/
@@ -101,11 +103,11 @@ h5 {
   color: var(--orange);
 }
 
-button {
+.btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 62px;
+  height: 60px;
   min-width: 180px;
   padding: 0 20px;
   font-size: 17px;
@@ -116,12 +118,12 @@ button {
   box-shadow: 0 12px 30px 0 rgba(223, 105, 81, 0.15);
   transition: all 0.2s ease-in-out;
 }
-button:hover {
+.btn:hover {
   background-color: var(--orange-hover);
 }
 
 .btnSmall {
-  height: 52px;
+  height: 50px;
   min-width: 130px;
 }
 
