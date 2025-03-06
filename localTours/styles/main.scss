@@ -1,45 +1,26 @@
 .main {
-  .section-quoteBlock {
+  flex: 1;
+  .section-imageBlock {
     background: url('../assets/images/main.jpg') 0 0/cover no-repeat;
-    min-height: 900px;
-    .quoteBlock__header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 60px 0 0 0;
-      .quoteBlock__headerNav {
-        display: flex;
-        gap: 50px;
-        a {
-          position: relative;
-          color: var(--white);
-          font-weight: 500;
-          &.active:before {
-            position: absolute;
-            content: '';
-            bottom: -7px;
-            left: 50%;
-            transform: translate(-50%, 0);
-            height: 2px;
-            width: 80%;
-            background-color: var(--orange);
-            border-radius: 1px;
+    height: 900px;
+    .wrapper {
+      height: 85%;
+      .imageBlock {
+        .imageBlock__content {
+          flex-direction: column;
+          align-items: flex-start;
+          .imageBlock__quote {
+            font-weight: 700;
+            font-size: 58px;
+            line-height: 116%;
+            color: var(--white);
+            margin: 8px 0 0 0;
+            max-width: 670px;
+          }
+          .imageBlock__button {
+            margin: 20px 0 0 0;
           }
         }
-      }
-    }
-    .quoteBlock {
-      margin: 170px 0 0 0;
-      .quoteBlock__quote {
-        font-weight: 700;
-        font-size: 58px;
-        line-height: 116%;
-        color: var(--white);
-        margin: 8px 0 0 0;
-        max-width: 670px;
-      }
-      .quoteBlock__button {
-        margin: 20px 0 0 0;
       }
     }
   }

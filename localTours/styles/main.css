@@ -1,37 +1,18 @@
-.main .section-quoteBlock {
-  background: url("../assets/images/4.jpg") 0 0/cover no-repeat;
-  min-height: 900px;
+.main {
+  flex: 1;
 }
-.main .section-quoteBlock .quoteBlock__header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 60px 0 0 0;
+.main .section-imageBlock {
+  background: url("../assets/images/main.jpg") 0 0/cover no-repeat;
+  height: 900px;
 }
-.main .section-quoteBlock .quoteBlock__header .quoteBlock__headerNav {
-  display: flex;
-  gap: 50px;
+.main .section-imageBlock .wrapper {
+  height: 85%;
 }
-.main .section-quoteBlock .quoteBlock__header .quoteBlock__headerNav a {
-  position: relative;
-  color: var(--white);
-  font-weight: 500;
+.main .section-imageBlock .wrapper .imageBlock .imageBlock__content {
+  flex-direction: column;
+  align-items: flex-start;
 }
-.main .section-quoteBlock .quoteBlock__header .quoteBlock__headerNav a.active:before {
-  position: absolute;
-  content: "";
-  bottom: -7px;
-  left: 50%;
-  transform: translate(-50%, 0);
-  height: 2px;
-  width: 80%;
-  background-color: var(--orange);
-  border-radius: 1px;
-}
-.main .section-quoteBlock .quoteBlock {
-  margin: 170px 0 0 0;
-}
-.main .section-quoteBlock .quoteBlock .quoteBlock__quote {
+.main .section-imageBlock .wrapper .imageBlock .imageBlock__content .imageBlock__quote {
   font-weight: 700;
   font-size: 58px;
   line-height: 116%;
@@ -39,7 +20,7 @@
   margin: 8px 0 0 0;
   max-width: 670px;
 }
-.main .section-quoteBlock .quoteBlock .quoteBlock__button {
+.main .section-imageBlock .wrapper .imageBlock .imageBlock__content .imageBlock__button {
   margin: 20px 0 0 0;
 }
 .main .section-partners .partners {

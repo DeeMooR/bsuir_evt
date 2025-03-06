@@ -5,31 +5,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./assets/icons/logo.svg" />
   <link rel="stylesheet" href="./styles/common/common.css">
+  <link rel="stylesheet" href="./styles/common/headerImage.css">
   <link rel="stylesheet" href="./styles/common/tour.css">
   <link rel="stylesheet" href="./styles/main.css">
   <title>Local Tours</title>
 </head>
 <body>
   <main class="main">
-    <section class="section-quoteBlock">
+    <section class="section-imageBlock">
       <div class="wrapper">
-        <header class="quoteBlock__header">
-          <a class="header__logo" href="#">
-            <img src="./assets/icons/logo.svg" alt="logo">
-          </a>
-          <div class="quoteBlock__headerNav">
-            <a class="active" href="#">Home</a>
-            <a href="/tours.html">Tours</a>
-            <a href="/about.html">About us</a>
+        <div class="imageBlock">
+          <header class="header">
+            <a class="header__logo" href="#">
+              <img src="./assets/icons/logo.svg" alt="logo">
+            </a>
+            <div class="header__nav">
+              <a class="active" href="#">Home</a>
+              <a href="/tours.html">Tours</a>
+              <a href="/about.html">About us</a>
+            </div>
+            <button class="header__button btn btnSmall">
+              Sign In
+            </button>
+          </header>
+          <div class="imageBlock__content">
+            <img class="imageBlock__line" src="./assets/icons/line.svg" alt="line">
+            <h1 class="imageBlock__quote">No matter where you’re going to, we’ll take you there</h1>
+            <button class="imageBlock__button btn" onclick="window.location.href='tours.html'">All Tours</button>
           </div>
-          <button class="header__button btn btnSmall">
-            Sign In
-          </button>
-        </header>
-        <div class="quoteBlock">
-          <img class="quoteBlock__line" src="./assets/icons/line.svg" alt="line">
-          <h1 class="quoteBlock__quote">No matter where you’re going to, we’ll take you there</h1>
-          <button class="quoteBlock__button btn" onclick="window.location.href='tours.html'">All Tours</button>
         </div>
       </div>
     </section>

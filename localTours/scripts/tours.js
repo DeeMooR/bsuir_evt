@@ -1,7 +1,7 @@
 import { tours } from '../data/tours.js'
 import { createTourCard, handleTourClick } from './helper.js'
 
-const toursContainer = document.querySelector('.section-tours');
+const toursContainer = document.querySelector('.tours');
 
 tours.forEach(tour => {
   const tourCard = createTourCard(tour);

@@ -5,30 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="./assets/icons/logo.svg" />
   <link rel="stylesheet" href="./styles/common/common.css">
+  <link rel="stylesheet" href="./styles/common/headerImage.css">
   <link rel="stylesheet" href="./styles/common/tour.css">
   <link rel="stylesheet" href="./styles/tours.css">
   <title>Local Tours</title>
 </head>
 <body>
-  <header class="header">
-    <div class="header__wrapper">
-      <a class="header__logo" href="/main.html">
-        <img src="./assets/icons/logo.svg" alt="logo">
-      </a>
-      <div class="header__nav">
-        <a href="/main.html">Home</a>
-        <a class="active" href="#">Tours</a>
-        <a href="/about.html">About us</a>
-      </div>
-      <button class="header__button btn btnSmall">
-        Sign In
-      </button>
-    </div>
-  </header>
   <main class="main">
-    <div class="wrapper">
-      <section class="section-tours"></section>
-    </div>
+    <section class="section-imageBlock">
+      <div class="wrapper">
+        <div class="imageBlock">
+          <header class="header">
+            <a class="header__logo" href="/main.html">
+              <img src="./assets/icons/logo.svg" alt="logo">
+            </a>
+            <div class="header__nav">
+              <a href="/main.html">Home</a>
+              <a class="active" href="#">Tours</a>
+              <a href="/about.html">About us</a>
+            </div>
+            <button class="header__button btn btnSmall">
+              Sign In
+            </button>
+          </header>
+          <div class="imageBlock__content">
+            <h1 class="content__title">Tours</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+      <section class="section-tours">
+        <div class="wrapper">
+          <div class="tours"></div>
+        </div>
+      </section>
   </main>
   <footer class="footer">
     <p class="footer__text">Copyright @ Travel 2025. All Rights Reserved.</p>
