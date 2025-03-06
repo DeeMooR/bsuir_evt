@@ -3,7 +3,7 @@ export const createTourCard = (tour) => {
   tourCard.classList.add('tour__card');
 
   tourCard.innerHTML = `
-    <img src="${tour.image}" class="tour__image" alt="${tour.title}">
+    <div class="tour__image" id="image-${tour.id}"></div>
     <div class="tour__iconGroups">
       <div class="iconGroup">
         <img src="./assets/icons/calender.svg" class="iconGroup__icon" alt="calender">

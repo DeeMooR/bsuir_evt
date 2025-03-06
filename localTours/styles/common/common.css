@@ -1,5 +1,7 @@
 /*--------- FONTS ----------*/
 
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delius&display=swap');
 @font-face {
   font-family: "Roboto";
   src: url("./fonts/Roboto-Regular.ttf") format("truetype");
@@ -23,6 +25,8 @@
 
 :root {
   --font-main: 'Roboto';
+  --font-pen: 'Yesteryear', cursive;
+  --font-quote: 'Delius', cursive;
   
   --white: #FFFFFF;
   --black: #000;

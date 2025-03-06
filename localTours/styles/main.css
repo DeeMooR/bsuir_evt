@@ -13,6 +13,7 @@
   align-items: flex-start;
 }
 .main .section-imageBlock .wrapper .imageBlock .imageBlock__content .imageBlock__quote {
+  font-family: var(--font-quote);
   font-weight: 700;
   font-size: 58px;
   line-height: 116%;
@@ -81,7 +82,7 @@
 .main .section-amazing {
   display: flex;
   align-items: center;
-  background: url("../assets/images/amazing.png") 0 0/cover no-repeat;
+  background: url("../assets/images/amazing.jpg") 0 40%/cover no-repeat;
   min-height: 300px;
   margin: 80px 0 0 0;
 }
@@ -91,6 +92,7 @@
   padding: 0 20px;
 }
 .main .section-amazing .amazing__content .amazing__text {
+  font-family: var(--font-quote);
   font-weight: 600;
   font-size: 38px;
   text-transform: capitalize;

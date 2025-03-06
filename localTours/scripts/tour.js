@@ -19,8 +19,8 @@ const fillTourInfo = () => {
   const location = document.querySelector('#location');
 
   title.textContent = tour.title;
-  description.textContent = tour.description;
-  image.src = tour.image;
+  description.innerHTML = tour.description;
+  image.style.backgroundImage = `url('${tour.image}')`;
   currentCost.textContent = tour.currentCost + ' $';
   oldCost.textContent = tour.oldCost + ' $';
   days.textContent = tour.days;
