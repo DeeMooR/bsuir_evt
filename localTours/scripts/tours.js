@@ -4,7 +4,7 @@ import { createTourCard, handleTourClick } from './helper.js'
 const toursContainer = document.querySelector('.tours');
 
 tours.forEach(tour => {
-  const tourCard = createTourCard(tour);
+  const tourCard = createTourCard(tour, 'tours');
   toursContainer.appendChild(tourCard);
 
   const tourImage = document.querySelector(`#image-${tour.id}`);

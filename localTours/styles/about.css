@@ -2,7 +2,7 @@
   flex: 1;
 }
 .main .section-imageBlock {
-  background: url("../assets/images/about.jpg") 0 55%/cover no-repeat;
+  background: url("../assets/images/about.jpg") 50% 55%/cover no-repeat;
   height: 600px;
 }
 .main .section-imageBlock .wrapper {
@@ -57,4 +57,19 @@
 .main .section-contacts .contacts .contacts__content .content__textBlock .content__items .content__item .item__line .item__text {
   font-size: 18px;
   line-height: 122%;
+}
+
+@media (max-width: 767.98px) {
+  .main .section-imageBlock {
+    height: 500px;
+    background-size: auto 110%;
+    background-position: 50% 100%;
+  }
+}
+@media (max-width: 479.98px) {
+  .main .section-imageBlock {
+    background-size: auto 130%;
+    background-position: 60% 30%;
+    height: 350px;
+  }
 }

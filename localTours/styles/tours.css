@@ -2,7 +2,7 @@
   flex: 1;
 }
 .main .section-imageBlock {
-  background: url("../assets/images/tours.jpg") 0 55%/cover no-repeat;
+  background: url("../assets/images/tours.jpg") 50% 55%/cover no-repeat;
   height: 600px;
 }
 .main .section-imageBlock .wrapper {
@@ -16,5 +16,24 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  gap: 70px 50px;
+  gap: 50px 30px;
+}
+
+@media (max-width: 767.98px) {
+  .main .section-imageBlock {
+    height: 500px;
+    background-size: auto 110%;
+    background-position: 50% 100%;
+  }
+  .main .section-tours .tours {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+}
+@media (max-width: 479.98px) {
+  .main .section-imageBlock {
+    background-size: auto 130%;
+    background-position: 60% 50%;
+    height: 350px;
+  }
 }

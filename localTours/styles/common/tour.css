@@ -40,6 +40,14 @@
   display: flex;
   gap: 3px;
 }
+.tour__card .tour__titleStars .tour__starsShort {
+  display: none;
+  align-items: center;
+  gap: 6px;
+}
+.tour__card .tour__titleStars .tour__starsShort .starsShort__number {
+  color: var(--yellow);
+}
 .tour__card .tour__location {
   display: flex;
   align-items: center;
@@ -79,4 +87,119 @@
 }
 .tour__card .tour__button {
   margin: 24px 0 0 0;
+}
+
+@media (max-width: 1119.98px) {
+  .tour__card {
+    max-width: 29vw;
+  }
+  .tour__card .tour__titleStars .tour__title {
+    font-size: 2.5vw;
+  }
+  .tour__card .tour__costs .tour__currentCost {
+    font-size: 3vw;
+  }
+  .tour__card .tour__costs .tour__oldCost {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 899.98px) {
+  .tour__card .tour__location {
+    display: none;
+  }
+  .tour__card .tour__titleStars .tour__stars {
+    display: none;
+  }
+  .tour__card .tour__titleStars .tour__starsShort {
+    display: flex;
+  }
+}
+@media (max-width: 767.98px) {
+  .tour__card {
+    width: calc(50% - 20px);
+    max-width: none;
+  }
+  .tour__card.isMain:nth-child(3) {
+    display: none;
+  }
+  .tour__card .tour__titleStars .tour__title {
+    font-size: 3.8vw;
+  }
+  .tour__card .tour__costs .tour__currentCost {
+    font-size: 4vw;
+  }
+  .tour__card .tour__costs .tour__oldCost {
+    font-size: 2.8vw;
+  }
+  .tour__card .tour__location {
+    display: flex;
+  }
+  .tour__card .tour__titleStars .tour__stars {
+    display: flex;
+  }
+  .tour__card .tour__titleStars .tour__starsShort {
+    display: none;
+  }
+  .tour__card .tour__description {
+    font-size: 2vw;
+  }
+}
+@media (max-width: 599.98px) {
+  .tour__card {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  .tour__card .tour__iconGroups .iconGroup .iconGroup__text {
+    font-size: 18px;
+  }
+  .tour__card .tour__titleStars .tour__title {
+    font-size: 5.5vw;
+  }
+  .tour__card .tour__location .location__text {
+    font-size: 18px;
+  }
+  .tour__card .tour__costs .tour__currentCost {
+    font-size: 5.5vw;
+  }
+  .tour__card .tour__costs .tour__oldCost {
+    font-size: 4vw;
+  }
+  .tour__card .tour__description {
+    font-size: 2.8vw;
+  }
+}
+@media (max-width: 479.98px) {
+  .tour__card .tour__iconGroups .iconGroup .iconGroup__text {
+    font-size: 16px;
+  }
+  .tour__card .tour__titleStars .tour__title {
+    font-size: 30px;
+  }
+  .tour__card .tour__location .location__text {
+    font-size: 16px;
+  }
+  .tour__card .tour__costs .tour__currentCost {
+    font-size: 30px;
+  }
+  .tour__card .tour__costs .tour__oldCost {
+    font-size: 20px;
+  }
+  .tour__card .tour__description {
+    font-size: 14px;
+  }
+  .tour__card .tour__button {
+    margin: 15px 0 0 0;
+  }
+}
+@media (max-width: 399.98px) {
+  .tour__card .tour__titleStars .tour__stars {
+    display: none;
+  }
+  .tour__card .tour__titleStars .tour__starsShort {
+    display: flex;
+  }
+  .tour__card .tour__titleStars .tour__starsShort .starsShort__number {
+    font-size: 20px;
+  }
 }

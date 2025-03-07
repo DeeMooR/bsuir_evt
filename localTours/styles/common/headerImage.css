@@ -53,3 +53,9 @@
   text-align: center;
   color: var(--grey);
 }
+
+@media (max-width: 599.98px) {
+  .imageBlock__title {
+    font-size: 16vw;
+  }
+}

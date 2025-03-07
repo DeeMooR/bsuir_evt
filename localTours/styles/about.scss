@@ -1,7 +1,7 @@
 .main {
   flex: 1;
   .section-imageBlock {
-    background: url('../assets/images/about.jpg') 0 55%/cover no-repeat;
+    background: url('../assets/images/about.jpg') 50% 55%/cover no-repeat;
     height: 600px;
     .wrapper {
       height: calc(100% - 50px);
@@ -57,6 +57,26 @@
           }
         }
       }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .main {
+    .section-imageBlock {
+      height: 500px;
+      background-size: auto 110%;
+      background-position: 50% 100%;
+    }
+  }
+}
+
+@media (max-width: 479.98px) {
+  .main {
+    .section-imageBlock {
+      background-size: auto 130%;
+      background-position: 60% 30%;
+      height: 350px;
     }
   }
 }

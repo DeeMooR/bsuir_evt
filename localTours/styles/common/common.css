@@ -40,6 +40,7 @@
   --orange: #DF6951;
   --orange-hover: #df7763;
   --success: #4DB84D;
+  --yellow: #FFBA0A;
   --error: #DF5A5A;
 }
 
@@ -102,7 +103,7 @@ h4 {
 
 h5 {
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   text-align: center;
   color: var(--orange);
 }
@@ -183,4 +184,23 @@ body {
   font-size: 12px;
   text-align: center;
   color: var(--grey);
+}
+
+@media (max-width: 599.98px) {
+  h2 {
+    font-size: 7vw;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .btn {
+    height: 52px;
+    min-width: 160px;
+    padding: 0 16px;
+    font-size: 17px;
+  }
+  .btnSmall {
+    height: 44px;
+    min-width: 110px;
+  }
 }

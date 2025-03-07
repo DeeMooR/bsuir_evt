@@ -1,6 +1,7 @@
-export const createTourCard = (tour) => {
+export const createTourCard = (tour, page) => {
+  const pageClass = page === 'main' && 'isMain';
   const tourCard = document.createElement('div');
-  tourCard.classList.add('tour__card');
+  tourCard.classList.add('tour__card', pageClass);
 
   tourCard.innerHTML = `
     <div class="tour__image" id="image-${tour.id}"></div>
@@ -11,7 +12,7 @@ export const createTourCard = (tour) => {
       </div>
       <div class="iconGroup">
         <img src="./assets/icons/avatar.svg" class="iconGroup__icon" alt="avatar">
-        <p class="iconGroup__text">${tour.people} Going</p>
+        <p class="iconGroup__text">${tour.people}</p>
       </div>
     </div>
     <div class="tour__titleStars">
@@ -22,6 +23,10 @@ export const createTourCard = (tour) => {
         <img src="../assets/icons/star_fill.svg" class="tour__star" alt="star_fill">
         <img src="../assets/icons/star_fill.svg" class="tour__star" alt="star_fill">
         <img src="../assets/icons/star_fill.svg" class="tour__star" alt="star_fill">
+      </div>
+      <div class="tour__starsShort">
+        <span class="starsShort__number">5</span>
+        <img src="./assets/icons/star_fill.svg" class="starsShort__star" alt="star_fill">
       </div>
     </div>
     <div class="tour__location">

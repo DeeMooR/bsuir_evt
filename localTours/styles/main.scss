@@ -1,7 +1,7 @@
 .main {
   flex: 1;
   .section-imageBlock {
-    background: url('../assets/images/main.jpg') 0 0/cover no-repeat;
+    background: url('../assets/images/main.jpg') center/cover no-repeat;
     height: 900px;
     .wrapper {
       height: 85%;
@@ -33,7 +33,7 @@
       height: 160px;
       background-color: var(--grey-light);
       img {
-        transform: scale(0.8);
+        max-width: 150px;
       }
     }
   }
@@ -46,6 +46,7 @@
       margin: 20px 0 0 0;
       display: flex;
       justify-content: space-between;
+      gap: 10px;
       .services__card {
         border-radius: 36px;
         padding: 18px 26px 32px;
@@ -79,13 +80,13 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 50px;
+      gap: 30px;
     }
   }
   .section-amazing {
     display: flex;
     align-items: center;
-    background: url('../assets/images/amazing.jpg') 0 40%/cover no-repeat;
+    background: url('../assets/images/amazing.jpg') 50% 40%/cover no-repeat;
     min-height: 300px;
     margin: 80px 0 0 0;
     .amazing__content {
@@ -110,7 +111,7 @@
   }
   .section-comments {
     background-color: var(--grey-light);
-    padding: 110px 0 60px 0;
+    padding: 110px 20px 60px;
     h2 {
       margin: 20px 0 0 0;
     }
@@ -119,8 +120,7 @@
       .comments__card {
         position: relative;
         width: 100%;
-        max-width: 540px;
-        padding: 0 50px;
+        max-width: 500px;
         margin: 0 auto;
         background-color: var(--white);
         border-radius: 18px;
@@ -159,7 +159,7 @@
           }
           .card__text {
             position: relative;
-            font-size: 12px;
+            font-size: 14px;
             line-height: 200%;
             letter-spacing: 0.05em;
             text-align: center;
@@ -195,6 +195,235 @@
           cursor: pointer;
           &.pagination__active {
             background-color: var(--orange);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .main {
+    .section-partners {
+      .partners {
+        height: 140px;
+        img {
+          max-width: 13vw;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1023.98px) {
+  .main {
+    .section-amazing {
+      .amazing__content {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 899.98px) {
+  .main {
+    .section-partners {
+      .partners {
+        height: 120px;
+      }
+    }
+    .section-services {
+      margin: 80px 0 0 0;
+      .services {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        .services__card {
+          width: calc(50% - 15px);
+        }
+      }
+    }
+    .section-tours {
+      margin: 80px 0 0 0;
+    }
+    .section-comments {
+      padding: 80px 35px 60px;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .main {
+    .section-imageBlock {
+      background-size: auto 110%;
+      background-position: center 10%;
+      height: 700px;
+      .wrapper {
+        height: 95%;
+        .imageBlock {
+          .imageBlock__content {
+            .imageBlock__quote {
+              font-size: 9vw;
+            }
+          }
+        }
+      }
+    }
+    .section-partners {
+      .partners {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        height: auto;
+        padding: 30px 20px;
+        img {
+          min-width: 21vw;
+        }
+      }
+    }
+    .section-tours {
+      .tours {
+        flex-wrap: wrap;
+        gap: 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: 599.98px) {
+  .main {
+    .section-partners {
+      .partners {
+        gap: 40px;
+        img {
+          min-width: calc((100% - 120px)/3);
+        }
+      }
+    }
+    .section-comments {
+      .comments {
+        margin: 60px auto 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 499.98px) {
+  .main {
+    .section-amazing {
+      min-height: 240px;
+      background-size: auto 140%;
+      .amazing__content {
+        .amazing__text {
+          font-size: 7.6vw;
+          &::after {
+            bottom: -30px;
+            transform: rotate(-10deg) scale(0.5);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 479.98px) {
+  .main {
+    .section-imageBlock {
+      background-size: auto 120%;
+      background-position: 42% 10%;
+      height: 550px;
+    }
+    .section-partners {
+      .partners {
+        gap: 30px;
+        padding: 20px;
+        img {
+          min-width: calc((100% - 60px)/3);
+        }
+      }
+    }
+    .section-services {
+      margin: 60px 0 0 0;
+      h2 {
+        margin: 15px 0 0 0;
+      }
+      .services {
+        gap: 10px;
+        .services__card {
+          width: calc(50% - 5px);
+        }
+      }
+    }
+    .section-tours {
+      margin: 60px 0 0 0;
+      h2 {
+        margin: 15px 0 0 0;
+      }
+    }
+    .section-amazing {
+      margin: 60px 0 0 0;
+    }
+    .section-comments {
+      padding: 60px 20px 40px;
+      h2 {
+        margin: 15px 0 0 0;
+      }
+      .comments {
+        .comments__card {
+          .card__button {
+            width: 35px;
+            height: 80px;
+            border-radius: 17px;
+            &.card__btnLeft {
+              left: -10px;
+            }
+            &.card__btnRight {
+              right: -10px;
+            }
+          }
+          .card__content {
+            padding: 70px 35px 30px;
+            .card__imageContainer {
+              top: -40px;
+              .card__image {
+                max-width: 80px;
+              }
+            }
+            .card__text {
+              &:before {
+                transform: scale(0.7);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 399.98px) {
+  .main {
+    .section-services {
+      margin: 60px 0 0 0;
+      .services {
+        gap: 0;
+        .services__card {
+          width: 100%;
+          max-width: 300px;
+        }
+      }
+    }
+    .section-amazing {
+      min-height: 200px;
+      background-size: auto 170%;
+    }
+    .section-comments {
+      .comments {
+        .comments__card {
+          .card__content {
+            .card__text {
+              font-size: 13px;
+            }
           }
         }
       }
