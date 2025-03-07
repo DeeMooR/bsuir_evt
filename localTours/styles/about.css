@@ -28,6 +28,7 @@
   width: 56%;
 }
 .main .section-contacts .contacts .contacts__content .content__title {
+  font-family: var(--font-quote);
   text-align: left;
 }
 .main .section-contacts .contacts .contacts__content .content__textBlock {
