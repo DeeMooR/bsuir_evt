@@ -91,20 +91,21 @@ export const initSlideBar = () => {
 
 // Toggle Theme
 
-const handleToggleTheme = (buttons) => {
-  const body = document.body;
-  if (body.classList.contains('dark-theme')) {
-    buttons.forEach(item => {
-      const img = item.querySelector('img');
-      img.src = '../assets/icons/moon.svg'
-    });
-    body.classList.remove('dark-theme');
-  } else {
+const handleToggleTheme = (buttons, setDark) => {
+  if (setDark) {
     buttons.forEach(item => {
       const img = item.querySelector('img');
       img.src = '../assets/icons/sunny.svg'
     });
-    body.classList.add('dark-theme');
+    document.body.classList.add('dark-theme');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    buttons.forEach(item => {
+      const img = item.querySelector('img');
+      img.src = '../assets/icons/moon.svg'
+    });
+    document.body.classList.remove('dark-theme');
+    localStorage.setItem('theme', 'light');
   }
 }
 
@@ -114,6 +115,18 @@ export const initToggleTheme = () => {
   const buttons = [btnThemeHeader, btnThemeSlideBar];
 
   buttons.forEach(button => {
-    button.addEventListener('click', () => handleToggleTheme(buttons));
+    button.addEventListener('click', () => {
+      const setDark = !document.body.classList.contains('dark-theme');
+      handleToggleTheme(buttons, setDark)
+    });
   });
+}
+
+export const loadTheme = () => {
+  const btnThemeHeader = document.querySelector('.header__theme');
+  const btnThemeSlideBar = document.querySelector('.slideBar__theme');
+  const buttons = [btnThemeHeader, btnThemeSlideBar];
+  
+  const setDark = localStorage.getItem('theme') === 'dark';
+  handleToggleTheme(buttons, setDark);
 }

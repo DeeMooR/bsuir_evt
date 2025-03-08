@@ -15,7 +15,7 @@
             font-weight: 700;
             font-size: 58px;
             line-height: 116%;
-            color: var(--white);
+            color: var(--white-always);
             margin: 8px 0 0 0;
             max-width: 670px;
           }
@@ -35,11 +35,14 @@
       background-color: var(--grey-light);
       img {
         max-width: 150px;
+        &:first-child {
+          margin: 0 0 15px 0;
+        }
       }
     }
   }
   .section-services {
-    margin: 110px 0 0 0;
+    padding: 110px 0 40px 0;
     h2 {
       margin: 20px 0 0 0;
     }
@@ -54,7 +57,7 @@
         max-width: 250px;
         transition: all 0.2s ease-in-out;
         &:hover {
-          box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0), 0 8px 7px 0 rgba(0, 0, 0, 0.01), 0 20px 13px 0 rgba(0, 0, 0, 0.01), 0 39px 25px 0 rgba(0, 0, 0, 0.01), 0 65px 47px 0 rgba(0, 0, 0, 0.02), 0 100px 80px 0 rgba(0, 0, 0, 0.02);
+          box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
         }
         .services__icon {
           height: 80px;
@@ -72,7 +75,7 @@
     }
   }
   .section-tours {
-    margin: 110px 0 0 0;
+    padding: 70px 0 0 0;
     h2 {
       margin: 20px 0 0 0;
     }
@@ -85,27 +88,32 @@
     }
   }
   .section-amazing {
-    display: flex;
-    align-items: center;
-    background: url('../assets/images/amazing.jpg') 50% 40%/cover no-repeat;
-    min-height: 300px;
-    margin: 80px 0 0 0;
-    .amazing__content {
-      position: relative;
-      margin-left: calc((100vw - 1000px)/2);
-      padding: 0 20px;
-      .amazing__text {
-        font-family: var(--font-quote);
-        font-weight: 600;
-        font-size: 38px;
-        text-transform: capitalize;
-        color: var(--white);
-        &::after {
-          content: url('../assets/icons/amazing_line.svg');
-          position: absolute;
-          bottom: -40px;
-          right: -110px;
-          transform: rotate(-10deg) scale(0.8);
+    padding: 80px 0 0 0;
+    .amazing {
+      display: flex;
+      align-items: center;
+      background: url('../assets/images/amazing.jpg') 50% 40%/cover no-repeat;
+      min-height: 300px;
+      .amazing__content {
+        position: relative;
+        margin-left: calc((100vw - 1000px)/2);
+        padding: 0 20px;
+        .amazing__text {
+          font-family: var(--font-quote);
+          font-weight: 600;
+          font-size: 38px;
+          text-transform: capitalize;
+          color: var(--white);
+          &::after {
+            content: url('../assets/icons/amazing_line.svg');
+            position: absolute;
+            bottom: -40px;
+            right: -110px;
+            transform: rotate(-10deg) scale(0.8);
+          }
+          &.dark::after {
+            content: url('../assets/icons/dark-theme/amazing_line.svg');
+          }
         }
       }
     }
@@ -214,8 +222,10 @@
       }
     }
     .section-amazing {
-      .amazing__content {
-        margin-left: 0;
+      .amazing {
+        .amazing__content {
+          margin-left: 0;
+        }
       }
     }
   }
@@ -229,7 +239,7 @@
       }
     }
     .section-services {
-      margin: 80px 0 0 0;
+      padding: 80px 0 40px 0;
       .services {
         flex-wrap: wrap;
         justify-content: center;
@@ -240,7 +250,7 @@
       }
     }
     .section-tours {
-      margin: 80px 0 0 0;
+      padding: 40px 0 0 0;
     }
     .section-comments {
       padding: 80px 35px 60px;
@@ -297,11 +307,13 @@
       }
     }
     .section-amazing {
-      .amazing__content {
-        .amazing__text {
-          &::after {
-            bottom: -30px;
-            transform: rotate(-10deg) scale(0.7);
+      .amazing {
+        .amazing__content {
+          .amazing__text {
+            &::after {
+              bottom: -30px;
+              transform: rotate(-10deg) scale(0.7);
+            }
           }
         }
       }
@@ -317,17 +329,19 @@
 @media (max-width: 500px) {
   .main {
     .section-amazing {
-      min-height: 240px;
-      background-size: auto 140%;
-      .amazing__content {
-        .amazing__text {
-          font-size: 7.6vw;
-          &::after {
-            transform: rotate(-10deg) scale(0.5);
+      .amazing {
+        min-height: 240px;
+        background-size: auto 140%;
+        .amazing__content {
+          .amazing__text {
+            font-size: 7.6vw;
+            &::after {
+              transform: rotate(-10deg) scale(0.5);
+            }
           }
         }
       }
-    }
+      }
   }
 }
 
@@ -344,11 +358,14 @@
         padding: 20px;
         img {
           min-width: calc((100% - 60px)/3);
+          &:first-child {
+            margin: 0 0 5px 0;
+          }
         }
       }
     }
     .section-services {
-      margin: 60px 0 0 0;
+      padding: 60px 0 40px 0;
       h2 {
         margin: 15px 0 0 0;
       }
@@ -360,13 +377,13 @@
       }
     }
     .section-tours {
-      margin: 60px 0 0 0;
+      padding: 20px 0 0 0;
       h2 {
         margin: 15px 0 0 0;
       }
     }
     .section-amazing {
-      margin: 60px 0 0 0;
+      padding: 60px 0 0 0;
     }
     .section-comments {
       padding: 60px 20px 40px;
@@ -409,7 +426,7 @@
 @media (max-width: 400px) {
   .main {
     .section-services {
-      margin: 60px 0 0 0;
+      padding: 60px 0 0 0;
       .services {
         gap: 0;
         .services__card {
@@ -419,12 +436,14 @@
       }
     }
     .section-amazing {
-      min-height: 200px;
-      background-size: auto 170%;
-      .amazing__content {
-        .amazing__text {
-          &::after {
-            transform: rotate(-10deg) scale(0.4);
+      .amazing {
+        min-height: 200px;
+        background-size: auto 170%;
+        .amazing__content {
+          .amazing__text {
+            &::after {
+              transform: rotate(-10deg) scale(0.4);
+            }
           }
         }
       }

@@ -82,7 +82,7 @@
   font-size: 12px;
   letter-spacing: 0.05em;
   line-height: 200%;
-  color: #000;
+  color: var(--black);
   margin: 6px 0 0 0;
 }
 .tour__card .tour__button {

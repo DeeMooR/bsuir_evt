@@ -1,5 +1,13 @@
 import { tours } from '../data/tours.js'
-import { showModal, saveForm, hiddenModals, initSlideBar } from './helper.js'
+import { showModal, saveForm, hiddenModals, initSlideBar, initToggleTheme, loadTheme } from './helper.js'
+
+loadTheme();
+
+window.addEventListener('load', () => {
+  document.body.style.display = 'flex';
+});
+
+// Check tourId
 
 const tourId = +localStorage.getItem('tourId');
 const tour = tours.find(item => item.id === tourId);
@@ -63,6 +71,7 @@ closeButtons.forEach(button => {
   button.addEventListener('click', () => hiddenModals(modals));
 });
 
-// Slide Bar
+// Slide Bar, Theme
 
 initSlideBar();
+initToggleTheme();

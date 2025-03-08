@@ -18,7 +18,7 @@
   font-weight: 700;
   font-size: 58px;
   line-height: 116%;
-  color: var(--white);
+  color: var(--white-always);
   margin: 8px 0 0 0;
   max-width: 670px;
 }
@@ -35,8 +35,11 @@
 .main .section-partners .partners img {
   max-width: 150px;
 }
+.main .section-partners .partners img:first-child {
+  margin: 0 0 15px 0;
+}
 .main .section-services {
-  margin: 110px 0 0 0;
+  padding: 110px 0 40px 0;
 }
 .main .section-services h2 {
   margin: 20px 0 0 0;
@@ -54,7 +57,7 @@
   transition: all 0.2s ease-in-out;
 }
 .main .section-services .services .services__card:hover {
-  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0), 0 8px 7px 0 rgba(0, 0, 0, 0.01), 0 20px 13px 0 rgba(0, 0, 0, 0.01), 0 39px 25px 0 rgba(0, 0, 0, 0.01), 0 65px 47px 0 rgba(0, 0, 0, 0.02), 0 100px 80px 0 rgba(0, 0, 0, 0.02);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.1);
 }
 .main .section-services .services .services__card .services__icon {
   height: 80px;
@@ -69,7 +72,7 @@
   color: var(--blue-light);
 }
 .main .section-tours {
-  margin: 110px 0 0 0;
+  padding: 70px 0 0 0;
 }
 .main .section-tours h2 {
   margin: 20px 0 0 0;
@@ -82,30 +85,35 @@
   gap: 30px;
 }
 .main .section-amazing {
+  padding: 80px 0 0 0;
+}
+.main .section-amazing .amazing {
   display: flex;
   align-items: center;
   background: url("../assets/images/amazing.jpg") 50% 40%/cover no-repeat;
   min-height: 300px;
-  margin: 80px 0 0 0;
 }
-.main .section-amazing .amazing__content {
+.main .section-amazing .amazing .amazing__content {
   position: relative;
   margin-left: calc((100vw - 1000px) / 2);
   padding: 0 20px;
 }
-.main .section-amazing .amazing__content .amazing__text {
+.main .section-amazing .amazing .amazing__content .amazing__text {
   font-family: var(--font-quote);
   font-weight: 600;
   font-size: 38px;
   text-transform: capitalize;
   color: var(--white);
 }
-.main .section-amazing .amazing__content .amazing__text::after {
+.main .section-amazing .amazing .amazing__content .amazing__text::after {
   content: url("../assets/icons/amazing_line.svg");
   position: absolute;
   bottom: -40px;
   right: -110px;
   transform: rotate(-10deg) scale(0.8);
+}
+.main .section-amazing .amazing .amazing__content .amazing__text.dark::after {
+  content: url("../assets/icons/dark-theme/amazing_line.svg");
 }
 .main .section-comments {
   background-color: var(--grey-light);
@@ -206,7 +214,7 @@
   .main .section-partners .partners img {
     max-width: 13vw;
   }
-  .main .section-amazing .amazing__content {
+  .main .section-amazing .amazing .amazing__content {
     margin-left: 0;
   }
 }
@@ -215,7 +223,7 @@
     height: 120px;
   }
   .main .section-services {
-    margin: 80px 0 0 0;
+    padding: 80px 0 40px 0;
   }
   .main .section-services .services {
     flex-wrap: wrap;
@@ -226,7 +234,7 @@
     width: calc(50% - 15px);
   }
   .main .section-tours {
-    margin: 80px 0 0 0;
+    padding: 40px 0 0 0;
   }
   .main .section-comments {
     padding: 80px 35px 60px;
@@ -266,7 +274,7 @@
   .main .section-partners .partners img {
     min-width: calc((100% - 120px) / 3);
   }
-  .main .section-amazing .amazing__content .amazing__text::after {
+  .main .section-amazing .amazing .amazing__content .amazing__text::after {
     bottom: -30px;
     transform: rotate(-10deg) scale(0.7);
   }
@@ -275,14 +283,14 @@
   }
 }
 @media (max-width: 500px) {
-  .main .section-amazing {
+  .main .section-amazing .amazing {
     min-height: 240px;
     background-size: auto 140%;
   }
-  .main .section-amazing .amazing__content .amazing__text {
+  .main .section-amazing .amazing .amazing__content .amazing__text {
     font-size: 7.6vw;
   }
-  .main .section-amazing .amazing__content .amazing__text::after {
+  .main .section-amazing .amazing .amazing__content .amazing__text::after {
     transform: rotate(-10deg) scale(0.5);
   }
 }
@@ -299,8 +307,11 @@
   .main .section-partners .partners img {
     min-width: calc((100% - 60px) / 3);
   }
+  .main .section-partners .partners img:first-child {
+    margin: 0 0 5px 0;
+  }
   .main .section-services {
-    margin: 60px 0 0 0;
+    padding: 60px 0 40px 0;
   }
   .main .section-services h2 {
     margin: 15px 0 0 0;
@@ -312,13 +323,13 @@
     width: calc(50% - 5px);
   }
   .main .section-tours {
-    margin: 60px 0 0 0;
+    padding: 20px 0 0 0;
   }
   .main .section-tours h2 {
     margin: 15px 0 0 0;
   }
   .main .section-amazing {
-    margin: 60px 0 0 0;
+    padding: 60px 0 0 0;
   }
   .main .section-comments {
     padding: 60px 20px 40px;
@@ -352,7 +363,7 @@
 }
 @media (max-width: 400px) {
   .main .section-services {
-    margin: 60px 0 0 0;
+    padding: 60px 0 0 0;
   }
   .main .section-services .services {
     gap: 0;
@@ -361,11 +372,11 @@
     width: 100%;
     max-width: 300px;
   }
-  .main .section-amazing {
+  .main .section-amazing .amazing {
     min-height: 200px;
     background-size: auto 170%;
   }
-  .main .section-amazing .amazing__content .amazing__text::after {
+  .main .section-amazing .amazing .amazing__content .amazing__text::after {
     transform: rotate(-10deg) scale(0.4);
   }
   .main .section-comments .comments .comments__card .card__content .card__text {

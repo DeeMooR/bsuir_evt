@@ -1,4 +1,10 @@
-import { showModal, saveForm, hiddenModals, initSlideBar } from './helper.js'
+import { showModal, saveForm, hiddenModals, initSlideBar, initToggleTheme, loadTheme } from './helper.js'
+
+loadTheme();
+
+window.addEventListener('load', () => {
+  document.body.style.display = 'flex';
+});
 
 // Send form
 
@@ -33,6 +39,7 @@ closeButtons.forEach(button => {
   button.addEventListener('click', () => hiddenModals(modals));
 });
  
-// Slide Bar
+// Slide Bar, Theme
 
 initSlideBar();
+initToggleTheme();

@@ -7,7 +7,7 @@
   left: -100%;
   padding: 0 30px;
   z-index: 10;
-  background-color: var(--blue-light);
+  background-color: var(--blue-slidebar);
   transition: left 0.3s ease;
 }
 .slideBar.show {
@@ -47,7 +47,7 @@
   width: fit-content;
   margin: 0 auto;
   padding: 0 20px;
-  color: var(--white);
+  color: var(--white-always);
   text-transform: uppercase;
   transition: all 0.1s ease-in-out 0s;        
 }

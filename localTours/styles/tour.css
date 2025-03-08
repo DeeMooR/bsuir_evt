@@ -3,7 +3,7 @@
 }
 
 .header {
-  background-color: var(--blue-light);
+  background-color: var(--blue-slidebar);
 }
 
 .header__wrapper {
@@ -23,7 +23,7 @@
 
 .header__nav a {
   position: relative;
-  color: var(--white);
+  color: var(--white-always);
   font-weight: 500;
 }
 
@@ -59,7 +59,9 @@
 
 .main {
   flex: 1;
-  margin: 60px 0;
+}
+.main .section-tour {
+  padding: 60px 0 0 0;
 }
 .main .section-tour .tour {
   display: flex;
@@ -121,7 +123,7 @@
   width: 20px;
 }
 .main .section-formBlock {
-  margin: 100px 0 0 0;
+  padding: 100px 0 60px 0;
 }
 .main .section-formBlock .formBlock {
   display: flex;
@@ -195,8 +197,8 @@
   .header__nav {
     gap: 30px;
   }
-  .main {
-    margin: 40px 0 60px;
+  .main .section-tour {
+    padding: 40px 0 0 0;
   }
   .main .section-tour .tour {
     flex-direction: column;
@@ -241,7 +243,7 @@
     font-size: 20px;
   }
   .main .section-formBlock {
-    margin: 60px 0 0 0;
+    padding: 60px 0;
   }
   .main .section-formBlock .formBlock .formBlock__image {
     display: none;
@@ -294,8 +296,8 @@
   }
 }
 @media (max-width: 400px) {
-  .main {
-    margin: 40px 0;
+  .main .section-tour {
+    padding: 40px 0 0 0;
   }
   .main .section-tour .tour {
     gap: 12px;
@@ -321,6 +323,9 @@
   }
   .main .section-tour .tour .tour__card .tour__iconGroups .iconGroup .iconGroup__text {
     font-size: 18px;
+  }
+  .main .section-formBlock {
+    padding: 60px 0 40px 0;
   }
   .main .section-formBlock .formBlock .formBlock__form .form__fields {
     gap: 15px;
