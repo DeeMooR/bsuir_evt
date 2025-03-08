@@ -203,7 +203,7 @@
   }
 }
 
-@media (max-width: 1023.98px) {
+@media (max-width: 1024px) {
   .main {
     .section-partners {
       .partners {
@@ -221,7 +221,7 @@
   }
 }
 
-@media (max-width: 899.98px) {
+@media (max-width: 900px) {
   .main {
     .section-partners {
       .partners {
@@ -248,7 +248,7 @@
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .main {
     .section-imageBlock {
       background-size: auto 110%;
@@ -286,13 +286,23 @@
   }
 }
 
-@media (max-width: 599.98px) {
+@media (max-width: 600px) {
   .main {
     .section-partners {
       .partners {
         gap: 40px;
         img {
           min-width: calc((100% - 120px)/3);
+        }
+      }
+    }
+    .section-amazing {
+      .amazing__content {
+        .amazing__text {
+          &::after {
+            bottom: -30px;
+            transform: rotate(-10deg) scale(0.7);
+          }
         }
       }
     }
@@ -304,7 +314,7 @@
   }
 }
 
-@media (max-width: 499.98px) {
+@media (max-width: 500px) {
   .main {
     .section-amazing {
       min-height: 240px;
@@ -313,7 +323,6 @@
         .amazing__text {
           font-size: 7.6vw;
           &::after {
-            bottom: -30px;
             transform: rotate(-10deg) scale(0.5);
           }
         }
@@ -322,7 +331,7 @@
   }
 }
 
-@media (max-width: 479.98px) {
+@media (max-width: 480px) {
   .main {
     .section-imageBlock {
       background-size: auto 120%;
@@ -397,7 +406,7 @@
   }
 }
 
-@media (max-width: 399.98px) {
+@media (max-width: 400px) {
   .main {
     .section-services {
       margin: 60px 0 0 0;
@@ -412,6 +421,13 @@
     .section-amazing {
       min-height: 200px;
       background-size: auto 170%;
+      .amazing__content {
+        .amazing__text {
+          &::after {
+            transform: rotate(-10deg) scale(0.4);
+          }
+        }
+      }
     }
     .section-comments {
       .comments {

@@ -20,11 +20,21 @@
   height: 70px;
   margin: 25px 0 0 0;
 }
+.slideBar__buttons {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 0 0 10px 0;
+}
+.slideBar__theme {
+  width: 40px;
+  background-color: transparent;
+}
 .slideBar__cross {
   background-color: transparent;
   transform: scale(1.2);
   padding: 5px;
-  margin: 0 0 15px 0;
+  margin: 0 0 4px 0;
 }
 .slideBar__items {
   display: flex;
@@ -60,7 +70,6 @@
   color: var(--orange);
 }
 .slideBar__button {
+  width: 170px;
   margin: 15px auto 0;
-  width: 100%;
-  max-width: 170px;
 }

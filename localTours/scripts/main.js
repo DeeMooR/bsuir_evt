@@ -1,5 +1,5 @@
 import { tours } from '../data/tours.js'
-import { createTourCard, handleTourClick, initSlideBar } from './helper.js'
+import { createTourCard, handleTourClick, initSlideBar, initToggleTheme } from './helper.js'
 
 const toursContainer = document.querySelector('.tours');
 
@@ -18,3 +18,5 @@ buttons.forEach(button => {
 });
 
 initSlideBar();
+
+initToggleTheme();

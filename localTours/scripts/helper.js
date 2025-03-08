@@ -81,10 +81,39 @@ export const initSlideBar = () => {
   const slideBar = document.querySelector('.slideBar');
 
   btnMenu.addEventListener('click', () => {
-    slideBar.classList.toggle('show');
+    slideBar.classList.add('show');
   })
 
   btnClose.addEventListener('click', () => {
     slideBar.classList.remove('show');
   })
+}
+
+// Toggle Theme
+
+const handleToggleTheme = (buttons) => {
+  const body = document.body;
+  if (body.classList.contains('dark-theme')) {
+    buttons.forEach(item => {
+      const img = item.querySelector('img');
+      img.src = '../assets/icons/moon.svg'
+    });
+    body.classList.remove('dark-theme');
+  } else {
+    buttons.forEach(item => {
+      const img = item.querySelector('img');
+      img.src = '../assets/icons/sunny.svg'
+    });
+    body.classList.add('dark-theme');
+  }
+}
+
+export const initToggleTheme = () => {
+  const btnThemeHeader = document.querySelector('.header__theme');
+  const btnThemeSlideBar = document.querySelector('.slideBar__theme');
+  const buttons = [btnThemeHeader, btnThemeSlideBar];
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => handleToggleTheme(buttons));
+  });
 }

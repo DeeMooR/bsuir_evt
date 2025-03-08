@@ -89,9 +89,9 @@
   }
 }
 
-@media (max-width: 1119.98px) {
+@media (max-width: 1140px) {
   .tour__card {
-    max-width: 29vw;
+    width: 29vw;
     .tour__titleStars {
       .tour__title {
         font-size: 2.5vw;
@@ -114,9 +114,19 @@
   }
 }
 
-@media (max-width: 899.98px) {
+@media (max-width: 900px) {
   .tour__card {
+    width: calc(29vw - 10px);
+    .tour__iconGroups {
+      margin: 13px 0 0 0;
+      .iconGroup {
+        .iconGroup__text {
+          font-size: 14px;
+        }
+      }
+    }
     .tour__titleStars {
+      margin: 7px 0 0 0;
       .tour__title {
         font-size: 2.7vw;
       }
@@ -127,12 +137,19 @@
   }
 }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .tour__card {
     width: calc(50% - 20px);
     max-width: none;
     &.isMain:nth-child(3) {
       display: none;
+    }
+    .tour__iconGroups {
+      .iconGroup {
+        .iconGroup__text {
+          font-size: 16px;
+        }
+      }
     }
     .tour__titleStars {
       .tour__title {
@@ -156,12 +173,13 @@
   }
 }
 
-@media (max-width: 599.98px) {
+@media (max-width: 600px) {
   .tour__card {
     width: 100%;
     max-width: 480px;
     margin: 0 auto;
     .tour__iconGroups {
+      margin: 15px 0 0 0;
       .iconGroup {
         .iconGroup__text {
           font-size: 18px;
@@ -169,6 +187,7 @@
       }
     }
     .tour__titleStars {
+      margin: 8px 0 0 0;
       .tour__title {
         font-size: 5.5vw;
       }
@@ -198,7 +217,7 @@
   }
 }
 
-@media (max-width: 479.98px) {
+@media (max-width: 480px) {
   .tour__card {
     .tour__iconGroups {
       .iconGroup {
@@ -234,7 +253,7 @@
   }
 }
 
-@media (max-width: 399.98px) {
+@media (max-width: 400px) {
   .tour__card {
     .tour__titleStars {
       .tour__stars {

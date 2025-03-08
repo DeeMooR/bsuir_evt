@@ -186,13 +186,13 @@ body {
   color: var(--grey);
 }
 
-@media (max-width: 599.98px) {
+@media (max-width: 600px) {
   h2 {
     font-size: 7vw;
   }
 }
 
-@media (max-width: 479.98px) {
+@media (max-width: 480px) {
   .btn {
     height: 52px;
     min-width: 160px;
