@@ -1,5 +1,5 @@
 import { tours } from '../data/tours.js'
-import { showModal, saveForm, hiddenModals } from './helper.js'
+import { showModal, saveForm, hiddenModals, initSlideBar } from './helper.js'
 
 const tourId = +localStorage.getItem('tourId');
 const tour = tours.find(item => item.id === tourId);
@@ -62,3 +62,7 @@ form.addEventListener("submit", (event) => {
 closeButtons.forEach(button => {
   button.addEventListener('click', () => hiddenModals(modals));
 });
+
+// Slide Bar
+
+initSlideBar();

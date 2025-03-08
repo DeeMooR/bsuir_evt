@@ -34,6 +34,13 @@
   background-color: var(--orange);
   border-radius: 1px;
 }
+.header__menu {
+  display: none;
+  background-color: transparent;
+  transform: scale(1.2);
+  padding: 5px;
+  margin: 0 5px 0 0;
+}
 
 .main {
   flex: 1;
@@ -123,5 +130,23 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 699.98px) {
+  .header__nav {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 599.98px) {
+  .header__nav {
+    display: none;
+  }
+  .header__button {
+    display: none;
+  }
+  .header__menu {
+    display: block;
   }
 }

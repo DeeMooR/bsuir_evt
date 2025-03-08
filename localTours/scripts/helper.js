@@ -52,6 +52,8 @@ export const handleTourClick = (event) => {
   window.location.href = `/tour.html`;
 }
 
+// Modal
+
 export const showModal = (modal) => {
   modal.style.display = "block";
   setTimeout(() => {
@@ -68,5 +70,21 @@ export const saveForm = (obj, field) => {
 export const hiddenModals = (modals) => {
   modals.forEach(modal => {
     modal.style.display = "none";
+  })
+}
+
+// Slide Bar
+
+export const initSlideBar = () => {
+  const btnMenu = document.querySelector('.header__menu');
+  const btnClose = document.querySelector('.slideBar__cross');
+  const slideBar = document.querySelector('.slideBar');
+
+  btnMenu.addEventListener('click', () => {
+    slideBar.classList.toggle('show');
+  })
+
+  btnClose.addEventListener('click', () => {
+    slideBar.classList.remove('show');
   })
 }

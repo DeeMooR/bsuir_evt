@@ -1,4 +1,4 @@
-import { showModal, saveForm, hiddenModals } from './helper.js'
+import { showModal, saveForm, hiddenModals, initSlideBar } from './helper.js'
 
 // Send form
 
@@ -32,3 +32,7 @@ form.addEventListener("submit", (event) => {
 closeButtons.forEach(button => {
   button.addEventListener('click', () => hiddenModals(modals));
 });
+ 
+// Slide Bar
+
+initSlideBar();

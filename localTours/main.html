@@ -6,6 +6,7 @@
   <link rel="icon" href="./assets/icons/logo.svg" />
   <link rel="stylesheet" href="./styles/common/common.css">
   <link rel="stylesheet" href="./styles/common/headerImage.css">
+  <link rel="stylesheet" href="./styles/common/slideBar.css">
   <link rel="stylesheet" href="./styles/common/tour.css">
   <link rel="stylesheet" href="./styles/main.css">
   <title>Local Tours</title>
@@ -19,13 +20,16 @@
             <a class="header__logo" href="#">
               <img src="./assets/icons/logo.svg" alt="logo">
             </a>
-            <!-- <div class="header__nav">
+            <div class="header__nav">
               <a class="active" href="#">Home</a>
               <a href="/tours.html">Tours</a>
               <a href="/about.html">About us</a>
-            </div> -->
+            </div>
             <button class="header__button btn btnSmall">
               Sign In
+            </button>
+            <button class="header__menu">
+              <img src='./assets/icons/menu.svg' alt="menu" />
             </button>
           </header>
           <div class="imageBlock__content">
@@ -36,6 +40,24 @@
         </div>
       </div>
     </section>
+    <div class="slideBar">
+      <div class="slideBar__header">
+        <a class="slideBar__logo" href="#">
+          <img src="./assets/icons/logo.svg" alt="logo">
+        </a>
+        <button class="slideBar__cross">
+          <img src='./assets/icons/cross.svg' alt="cross" />
+        </button>
+      </div>
+      <div class="slideBar__items">
+        <a class="active" href="/main.html">Home</a>
+        <a href="/tours.html">Tours</a>
+        <a href="/about.html">About us</a>
+        <button class="slideBar__button btn">
+          Sign In
+        </button>
+      </div>
+    </div>
     <section class="section-partners">
       <div class="partners">
         <img src="./assets/icons/partner_1.svg" alt="partner_1">

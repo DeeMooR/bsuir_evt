@@ -1,5 +1,5 @@
 import { tours } from '../data/tours.js'
-import { createTourCard, handleTourClick } from './helper.js'
+import { createTourCard, handleTourClick, initSlideBar } from './helper.js'
 
 const toursContainer = document.querySelector('.tours');
 
@@ -16,3 +16,5 @@ const buttons = document.querySelectorAll('.tour__button');
 buttons.forEach(button => {
   button.addEventListener('click', handleTourClick);
 });
+
+initSlideBar();

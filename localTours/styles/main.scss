@@ -1,5 +1,6 @@
 .main {
   flex: 1;
+  position: relative;
   .section-imageBlock {
     background: url('../assets/images/main.jpg') center/cover no-repeat;
     height: 900px;
@@ -212,11 +213,6 @@
         }
       }
     }
-  }
-}
-
-@media (max-width: 1023.98px) {
-  .main {
     .section-amazing {
       .amazing__content {
         margin-left: 0;

@@ -1,5 +1,6 @@
 .main {
   flex: 1;
+  position: relative;
 }
 .main .section-imageBlock {
   background: url("../assets/images/main.jpg") center/cover no-repeat;
@@ -205,8 +206,6 @@
   .main .section-partners .partners img {
     max-width: 13vw;
   }
-}
-@media (max-width: 1023.98px) {
   .main .section-amazing .amazing__content {
     margin-left: 0;
   }
