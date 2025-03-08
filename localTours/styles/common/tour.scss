@@ -96,6 +96,12 @@
       .tour__title {
         font-size: 2.5vw;
       }
+      .tour__stars {
+        display: none;
+      }
+      .tour__starsShort {
+        display: flex;
+      }
     }
     .tour__costs {
       .tour__currentCost {
@@ -110,16 +116,13 @@
 
 @media (max-width: 899.98px) {
   .tour__card {
+    .tour__titleStars {
+      .tour__title {
+        font-size: 2.7vw;
+      }
+    }
     .tour__location {
       display: none;
-    }
-    .tour__titleStars {
-      .tour__stars {
-        display: none;
-      }
-      .tour__starsShort {
-        display: flex;
-      }
     }
   }
 }
@@ -147,14 +150,6 @@
     .tour__location {
       display: flex;
     }
-    .tour__titleStars {
-      .tour__stars {
-        display: flex;
-      }
-      .tour__starsShort {
-        display: none;
-      }
-    }
     .tour__description {
       font-size: 2vw;
     }
@@ -176,6 +171,12 @@
     .tour__titleStars {
       .tour__title {
         font-size: 5.5vw;
+      }
+      .tour__stars {
+        display: flex;
+      }
+      .tour__starsShort {
+        display: none;
       }
     }
     .tour__location {

@@ -15,6 +15,7 @@
       gap: 60px;
       .contacts__form {
         width: 44%;
+        height: fit-content;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -39,10 +40,11 @@
           .content__items {
             display: flex;
             gap: 45px;
+            margin: 40px 0 0 0;
             .content__item {
               .item__title {
                 font-size: 24px;
-                margin: 40px 0 18px 0;
+                margin: 0 0 18px 0;
               }
               .item__line {
                 display: flex;
@@ -62,12 +64,79 @@
   }
 }
 
+@media (max-width: 1119.98px) {
+  .main {
+    .section-contacts {
+      .contacts {
+        .contacts__content {
+          .content__textBlock {
+            padding: 10px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1023.98px) {
+  .main {
+    .section-contacts {
+      .contacts {
+        .contacts__form {
+          width: 47%;
+        }
+        .contacts__content {
+          width: 53%;
+          .content__textBlock {
+            .content__items {
+              flex-wrap: wrap;
+              gap: 30px;
+              margin: 30px 0 0 0;
+              .content__item {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 767.98px) {
   .main {
     .section-imageBlock {
       height: 500px;
       background-size: auto 110%;
       background-position: 50% 100%;
+    }
+    .section-contacts {
+      .contacts {
+        flex-direction: column-reverse;
+        gap: 45px;
+        width: 100%;
+        max-width: 580px;
+        margin: 0 auto;
+        padding: 0 10px;
+        .contacts__form {
+          width: 100%;
+          max-width: 500px;
+          margin: 0 auto;
+        }
+        .contacts__content {
+          width: 100%;
+          .content__textBlock {
+            .content__items {
+              gap: 20px;
+              justify-content: space-between;
+              .content__item {
+                width: auto;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -78,6 +147,13 @@
       background-size: auto 130%;
       background-position: 60% 30%;
       height: 350px;
+    }
+    .section-contacts {
+      .contacts {
+        .contacts__form {
+          padding: 40px 30px;
+        }
+      }
     }
   }
 }
