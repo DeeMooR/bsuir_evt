@@ -62,6 +62,7 @@
 .main .section-contacts .contacts .contacts__content .content__textBlock .content__items .content__item .item__line .item__text {
   font-size: 18px;
   line-height: 122%;
+  color: var(--black);
 }
 
 @media (max-width: 1120px) {

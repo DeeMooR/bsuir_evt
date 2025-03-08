@@ -205,6 +205,10 @@ body {
   overflow-y: scroll;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
@@ -219,6 +223,10 @@ body {
   padding: 15px 0 10px;
   font-size: 12px;
   text-align: center;
+  color: var(--grey);
+}
+.footer__text a {
+  display: inline-block;
   color: var(--grey);
 }
 

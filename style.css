@@ -13,17 +13,23 @@ h2 {
   margin: 0 0 15px 0;
 }
 
-ul {
-  margin: 0;
-}
-
 a {
   display: block;
   width: fit-content;
   color: rgb(43, 105, 220);
   transition: all 0.1s ease-in-out 0s;
-  padding: 3px;
 }
 a:hover {
   color: rgb(120, 160, 234);
+}
+
+ul {
+  margin: 0 0 15px 0;
+}
+li a {
+  padding: 3px;
+}
+
+h2 a {
+  text-decoration: none;
 }

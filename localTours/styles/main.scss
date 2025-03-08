@@ -103,16 +103,13 @@
           font-weight: 600;
           font-size: 38px;
           text-transform: capitalize;
-          color: var(--white);
+          color: var(--white-always);
           &::after {
             content: url('../assets/icons/amazing_line.svg');
             position: absolute;
             bottom: -40px;
             right: -110px;
             transform: rotate(-10deg) scale(0.8);
-          }
-          &.dark::after {
-            content: url('../assets/icons/dark-theme/amazing_line.svg');
           }
         }
       }
@@ -147,6 +144,10 @@
           align-items: center;
           font-weight: 700;
           cursor: pointer;
+          transition: all 0.2s ease-in-out;
+          &:hover {
+            opacity: 0.8;
+          }
           &.card__btnLeft {
             left: -25px;
           }
@@ -165,6 +166,12 @@
             border-radius: 50%;
             border: 5px solid var(--white);
             box-shadow: 6px 14px 27px 0 rgba(0, 0, 0, 0.15), inset -4px 11px 18px 0 rgba(0, 0, 0, 0.25);
+            .card__image {
+              transition: opacity 0.4s ease-in-out;
+              &.fade-out {
+                opacity: 0;
+              }
+            }
           }
           .card__text {
             position: relative;
@@ -173,11 +180,15 @@
             letter-spacing: 0.05em;
             text-align: center;
             color: vat(--black);
+            transition: opacity 0.4s ease-in-out;
             &:before {
               content: url('../assets/icons/quote.svg');
               position: absolute;
               top: -15px;
               left: -25px;
+            }
+            &.fade-out {
+              opacity: 0;
             }
           }
           .card__author {
@@ -193,17 +204,31 @@
       }
       .comments__pagination {
         display: flex;
-        gap: 15px;
-        margin: 20px auto 0;
+        gap: 9px;
+        margin: 15px auto 0;
         justify-content: center;
-        hr {
-          height: 2px;
-          width: 25px;
-          border-radius: 1px;
-          background-color: var(--grey-2);
+        div {
+          padding: 5px 3px;
           cursor: pointer;
-          &.pagination__active {
-            background-color: var(--orange);
+          hr {
+            height: 2px;
+            width: 25px;
+            border-radius: 1px;
+            background-color: var(--grey-2);
+            transition: all 0.2s ease-in-out;
+            &.active {
+              background-color: var(--orange);
+            }
+          }
+          &:hover {
+            hr {
+              opacity: 0.6;
+              background-color: var(--grey-dark);
+              &.active {
+                opacity: 1;
+                background-color: var(--orange);
+              }
+            }
           }
         }
       }

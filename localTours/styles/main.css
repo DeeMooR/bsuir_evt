@@ -103,7 +103,7 @@
   font-weight: 600;
   font-size: 38px;
   text-transform: capitalize;
-  color: var(--white);
+  color: var(--white-always);
 }
 .main .section-amazing .amazing .amazing__content .amazing__text::after {
   content: url("../assets/icons/amazing_line.svg");
@@ -111,9 +111,6 @@
   bottom: -40px;
   right: -110px;
   transform: rotate(-10deg) scale(0.8);
-}
-.main .section-amazing .amazing .amazing__content .amazing__text.dark::after {
-  content: url("../assets/icons/dark-theme/amazing_line.svg");
 }
 .main .section-comments {
   background-color: var(--grey-light);
@@ -147,6 +144,10 @@
   align-items: center;
   font-weight: 700;
   cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.main .section-comments .comments .comments__card .card__button:hover {
+  opacity: 0.8;
 }
 .main .section-comments .comments .comments__card .card__button.card__btnLeft {
   left: -25px;
@@ -167,6 +168,12 @@
   border: 5px solid var(--white);
   box-shadow: 6px 14px 27px 0 rgba(0, 0, 0, 0.15), inset -4px 11px 18px 0 rgba(0, 0, 0, 0.25);
 }
+.main .section-comments .comments .comments__card .card__content .card__imageContainer .card__image {
+  transition: opacity 0.4s ease-in-out;
+}
+.main .section-comments .comments .comments__card .card__content .card__imageContainer .card__image.fade-out {
+  opacity: 0;
+}
 .main .section-comments .comments .comments__card .card__content .card__text {
   position: relative;
   font-size: 14px;
@@ -174,12 +181,16 @@
   letter-spacing: 0.05em;
   text-align: center;
   color: vat(--black);
+  transition: opacity 0.4s ease-in-out;
 }
 .main .section-comments .comments .comments__card .card__content .card__text:before {
   content: url("../assets/icons/quote.svg");
   position: absolute;
   top: -15px;
   left: -25px;
+}
+.main .section-comments .comments .comments__card .card__content .card__text.fade-out {
+  opacity: 0;
 }
 .main .section-comments .comments .comments__card .card__content .card__author {
   margin: 13px 0 0 0;
@@ -192,18 +203,30 @@
 }
 .main .section-comments .comments .comments__pagination {
   display: flex;
-  gap: 15px;
-  margin: 20px auto 0;
+  gap: 9px;
+  margin: 15px auto 0;
   justify-content: center;
 }
-.main .section-comments .comments .comments__pagination hr {
+.main .section-comments .comments .comments__pagination div {
+  padding: 5px 3px;
+  cursor: pointer;
+}
+.main .section-comments .comments .comments__pagination div hr {
   height: 2px;
   width: 25px;
   border-radius: 1px;
   background-color: var(--grey-2);
-  cursor: pointer;
+  transition: all 0.2s ease-in-out;
 }
-.main .section-comments .comments .comments__pagination hr.pagination__active {
+.main .section-comments .comments .comments__pagination div hr.active {
+  background-color: var(--orange);
+}
+.main .section-comments .comments .comments__pagination div:hover hr {
+  opacity: 0.6;
+  background-color: var(--grey-dark);
+}
+.main .section-comments .comments .comments__pagination div:hover hr.active {
+  opacity: 1;
   background-color: var(--orange);
 }
 

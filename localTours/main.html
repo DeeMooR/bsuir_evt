@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./assets/icons/logo.svg" />
+  <link rel="icon" href="./assets/icons/logo.svg">
   <link rel="stylesheet" href="./styles/common/common.css">
   <link rel="stylesheet" href="./styles/common/headerImage.css">
   <link rel="stylesheet" href="./styles/common/slideBar.css">
@@ -12,7 +12,7 @@
   <title>Local Tours</title>
 </head>
 <body>
-  <main class="main">
+  <main class="main" id="main">
     <section class="section-imageBlock">
       <div class="wrapper">
         <div class="imageBlock">
@@ -33,7 +33,7 @@
                 <img src="./assets/icons/moon.svg" alt="moon">
               </button>
               <button class="header__menu">
-                <img src='./assets/icons/menu.svg' alt="menu" />
+                <img src='./assets/icons/menu.svg' alt="menu">
               </button>
             </div>
           </header>
@@ -55,7 +55,7 @@
             <img src="./assets/icons/moon.svg" alt="moon">
           </button>
           <button class="slideBar__cross">
-            <img src='./assets/icons/cross.svg' alt="cross" />
+            <img src='./assets/icons/cross.svg' alt="cross">
           </button>
         </div>
       </div>
@@ -68,7 +68,7 @@
         </button>
       </div>
     </div>
-    <section class="section-partners">
+    <div class="section-partners">
       <div class="partners">
         <img src="./assets/icons/partner_1.svg" alt="partner_1">
         <img src="./assets/icons/partner_2.svg" alt="partner_2">
@@ -76,7 +76,7 @@
         <img src="./assets/icons/partner_4.svg" alt="partner_4">
         <img src="./assets/icons/partner_5.svg" alt="partner_5">
       </div>
-    </section>
+    </div>
     <section class="section-services">
       <div class="wrapper">
         <h5>Category</h5>
@@ -108,20 +108,20 @@
     <section class="section-tours">
       <div class="wrapper">
         <h5>Trendy</h5>
-        <h2>Our Trending Tour <br/>Packages</h2>
+        <h2>Our Trending Tour <br>Packages</h2>
         <div class="tours"></div>
       </div>
     </section>
-    <section class="section-amazing">
+    <div class="section-amazing">
       <div class="amazing imageTheme">
         <div class="amazing__content">
-          <p class="amazing__text">Let’s make your <br/>next holiday amazing</p>
+          <p class="amazing__text">Let’s make your <br>next holiday amazing</p>
         </div>
       </div>
-    </section>
+    </div>
     <section class="section-comments">
       <h5>Promotion</h5>
-      <h2>See What Our Clients Say <br/>About Us</h2>
+      <h2>See What Our Clients Say <br>About Us</h2>
       <div class="comments">
         <div class="comments__card">
           <div class="card__content">
@@ -135,18 +135,18 @@
           <div class="card__button card__btnRight">→</div>
         </div>
         <div class="comments__pagination">
-          <hr class="pagination__active" id="pagination_1"></hr>
-          <hr id="pagination_2"></hr>
-          <hr id="pagination_3"></hr>
-          <hr id="pagination_4"></hr>
-          <hr id="pagination_5"></hr>
-          <hr id="pagination_6"></hr>
+          <div class="pagination" id="pagination_1"><hr class="active"></div>
+          <div class="pagination" id="pagination_2"><hr></div>
+          <div class="pagination" id="pagination_3"><hr></div>
+          <div class="pagination" id="pagination_4"><hr></div>
+          <div class="pagination" id="pagination_5"><hr></div>
+          <div class="pagination" id="pagination_6"><hr></div>
         </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <p class="footer__text">Copyright @ Travel 2025. All Rights Reserved.</p>
+    <p class="footer__text">Copyright @ <a href="#main">Travel 2025</a>. All Rights Reserved.</p>
   </footer>
   <script src="./scripts/main.js" type="module"></script>
   <script src="./scripts/comments.js" type="module"></script>

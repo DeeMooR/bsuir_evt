@@ -61,17 +61,6 @@
   color: var(--white-always);
 }
 
-.footer {
-  border-top: 1px solid var(--grey-2);
-  background-color: var(--grey-light);
-}
-.footer__text {
-  padding: 15px 0 10px;
-  font-size: 12px;
-  text-align: center;
-  color: var(--grey);
-}
-
 @media (max-width: 700px) {
   .header__nav {
     gap: 30px;

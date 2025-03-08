@@ -1,5 +1,18 @@
 import { comments } from '../data/comments.js'
 
+// Auto scroll comments
+
+const autoScrollComments = () => {
+  activeComment = activeComment === comments.length ? 1 : activeComment + 1;
+  const oldId = activeComment === 1 ? comments.length : activeComment - 1;
+  updateComment(oldId);
+}
+
+let autoScrollInterval;
+autoScrollInterval = setInterval(autoScrollComments, 6000);
+
+// Click button
+
 const btnLeft = document.querySelector('.card__btnLeft');
 const btnRight = document.querySelector('.card__btnRight');
 
@@ -9,18 +22,32 @@ const cardAuthor = document.querySelector('.card__author');
 
 let activeComment = 1;
 
-// Click button
-
 const updateComment = (oldId) => {
   const obj = comments.find(item => item.id === activeComment);
-  cardImage.src = obj.image;
-  cardText.textContent = obj.text;
-  cardAuthor.textContent = obj.author;
+
+  cardImage.classList.add('fade-out');
+  cardText.classList.add('fade-out');
+  cardAuthor.classList.add('fade-out');
   
+  setTimeout(() => {
+    cardImage.src = obj.image;
+    cardText.textContent = obj.text;
+    cardAuthor.textContent = obj.author;
+  }, 300); 
+
+  setTimeout(() => {
+    cardImage.classList.remove('fade-out');
+    cardText.classList.remove('fade-out');
+    cardAuthor.classList.remove('fade-out');
+  }, 300); 
+
   const oldElement = document.querySelector(`#pagination_${oldId}`);
   const newElement = document.querySelector(`#pagination_${obj.id}`);
-  oldElement.classList.remove('pagination__active');
-  newElement.classList.add('pagination__active');
+  oldElement.querySelector('hr').classList.remove('active');
+  newElement.querySelector('hr').classList.add('active');
+
+  clearInterval(autoScrollInterval);
+  autoScrollInterval = setInterval(autoScrollComments, 6000);
 }
 
 btnRight.addEventListener('click', () => {
@@ -41,14 +68,15 @@ btnLeft.addEventListener('click', () => {
 
 // Click on pagination
 
-const hrs = document.querySelectorAll('hr');
+const handlePagination = () => {
+  const oldId = activeComment;
+  const elId = event.currentTarget.id;
+  activeComment = +elId.split('_')[1];
+  updateComment(oldId);
+}
 
-hrs.forEach(element => {
-  element.addEventListener('click', () => {
-    const oldId = activeComment;
-    const elId = event.currentTarget.id;
-    activeComment = +elId.split('_')[1];
-    
-    updateComment(oldId);
-  });
+const paginations = document.querySelectorAll('.pagination');
+
+paginations.forEach(element => {
+  element.addEventListener('click', handlePagination);
 });
