@@ -2,7 +2,7 @@ export const tours = [
   {
     id: 1,
     title: 'Nesvizh Castle',
-    image: '../assets/images/tour_1.jpg',
+    image: './assets/images/tour_1.jpg',
     days: 'May 18',
     people: '59 People',
     location: 'Minsk region',
@@ -13,7 +13,7 @@ export const tours = [
   {
     id: 2,
     title: 'Mir Castle',
-    image: '../assets/images/tour_2.jpeg',
+    image: './assets/images/tour_2.jpeg',
     days: 'May 19',
     people: '52 People',
     location: 'Grodno region',
@@ -24,7 +24,7 @@ export const tours = [
   {
     id: 3,
     title: 'Trinity Church',
-    image: '../assets/images/tour_3.jpg',
+    image: './assets/images/tour_3.jpg',
     days: 'May 20',
     people: '24 People',
     location: 'Grodno region',
@@ -35,7 +35,7 @@ export const tours = [
   {
     id: 4,
     title: 'Sophia Cathedral',
-    image: '../assets/images/tour_4.jpg',
+    image: './assets/images/tour_4.jpg',
     days: 'May 21',
     people: '49 People',
     location: 'Vitebsk region',
@@ -46,7 +46,7 @@ export const tours = [
   {
     id: 5,
     title: 'Farny Church',
-    image: '../assets/images/tour_5.jpg',
+    image: './assets/images/tour_5.jpg',
     days: 'May 22',
     people: '32 People',
     location: 'Grodno region',
@@ -57,7 +57,7 @@ export const tours = [
   {
     id: 6,
     title: 'Brest Fortress',
-    image: '../assets/images/tour_6.jpg',
+    image: './assets/images/tour_6.jpg',
     days: 'May 23',
     people: '58 People',
     location: 'Brest region',
@@ -68,7 +68,7 @@ export const tours = [
   {
     id: 7,
     title: 'Virgin Mary Church',
-    image: '../assets/images/tour_7.jpg',
+    image: './assets/images/tour_7.jpg',
     days: 'May 24',
     people: '34 People',
     location: 'Vitebsk region',
@@ -79,7 +79,7 @@ export const tours = [
   {
     id: 8,
     title: 'Palace of Sapieha',
-    image: '../assets/images/tour_8.jpg',
+    image: './assets/images/tour_8.jpg',
     days: 'May 25',
     people: '37 People',
     location: 'Brest region',
@@ -90,7 +90,7 @@ export const tours = [
   {
     id: 9,
     title: 'Narochansky Park',
-    image: '../assets/images/tour_9.jpg',
+    image: './assets/images/tour_9.jpg',
     days: 'May 26',
     people: '24 People',
     location: 'Minsk region',

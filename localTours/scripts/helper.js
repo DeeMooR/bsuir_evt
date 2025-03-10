@@ -18,15 +18,15 @@ export const createTourCard = (tour, page) => {
     <div class="tour__titleStars">
       <h3 class="tour__title">${tour.title}</h3>
       <div class="tour__stars">
-        <img src="../assets/icons/star_fill.svg" class="tour__star" alt="star_fill">
-        <img src="../assets/icons/star_fill.svg" class="tour__star" alt="star_fill">
-        <img src="../assets/icons/star_fill.svg" class="tour__star" alt="star_fill">
-        <img src="../assets/icons/star_fill.svg" class="tour__star" alt="star_fill">
-        <img src="../assets/icons/star_fill.svg" class="tour__star" alt="star_fill">
+        <img src="./assets/icons/star_fill.svg" class="tour__star" alt="star">
+        <img src="./assets/icons/star_fill.svg" class="tour__star" alt="star">
+        <img src="./assets/icons/star_fill.svg" class="tour__star" alt="star">
+        <img src="./assets/icons/star_fill.svg" class="tour__star" alt="star">
+        <img src="./assets/icons/star_fill.svg" class="tour__star" alt="star">
       </div>
       <div class="tour__starsShort">
         <span class="starsShort__number">5</span>
-        <img src="./assets/icons/star_fill.svg" class="starsShort__star" alt="star_fill">
+        <img src="./assets/icons/star_fill.svg" class="starsShort__star" alt="star">
       </div>
     </div>
     <div class="tour__location">
@@ -95,14 +95,14 @@ const handleToggleTheme = (buttons, setDark) => {
   if (setDark) {
     buttons.forEach(item => {
       const img = item.querySelector('img');
-      img.src = '../assets/icons/sunny.svg'
+      img.src = './assets/icons/sunny.svg'
     });
     document.body.classList.add('dark-theme');
     localStorage.setItem('theme', 'dark');
   } else {
     buttons.forEach(item => {
       const img = item.querySelector('img');
-      img.src = '../assets/icons/moon.svg'
+      img.src = './assets/icons/moon.svg'
     });
     document.body.classList.remove('dark-theme');
     localStorage.setItem('theme', 'light');
