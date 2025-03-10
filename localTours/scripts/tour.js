@@ -3,10 +3,6 @@ import { showModal, saveForm, hiddenModals, initSlideBar, initToggleTheme, loadT
 
 loadTheme();
 
-window.addEventListener('load', () => {
-  document.body.style.display = 'flex';
-});
-
 // Check tourId
 
 const tourId = +localStorage.getItem('tourId');
@@ -34,9 +30,13 @@ const fillTourInfo = () => {
   days.textContent = tour.days;
   people.textContent = tour.people + ' Going';
   location.textContent = tour.location;
+
+  document.body.style.display = 'flex';
 }
 
-fillTourInfo();
+window.addEventListener('load', () => {
+  fillTourInfo();
+});
 
 // Send form
 
