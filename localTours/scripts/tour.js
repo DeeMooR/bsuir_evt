@@ -5,7 +5,8 @@ loadTheme();
 
 // Check tourId
 
-const tourId = +localStorage.getItem('tourId');
+// const tourId = +localStorage.getItem('tourId');
+const tourId = 1;
 const tour = tours.find(item => item.id === tourId);
 
 if (!tour) window.location.href = 'main.html';
