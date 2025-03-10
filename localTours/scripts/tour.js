@@ -12,7 +12,7 @@ window.addEventListener('load', () => {
 const tourId = +localStorage.getItem('tourId');
 const tour = tours.find(item => item.id === tourId);
 
-if (!tour) window.location.href = `/main.html`;
+if (!tour) window.location.href = 'main.html';
 
 // Fill tour
 

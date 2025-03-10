@@ -49,7 +49,7 @@ export const handleTourClick = (event) => {
   const buttonId = event.currentTarget.id;
   const tourId = +buttonId.split('-')[1];
   localStorage.setItem('tourId', tourId);
-  window.location.href = `/tour.html`;
+  window.location.href = 'tour.html';
 }
 
 // Modal
