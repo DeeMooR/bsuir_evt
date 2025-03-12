@@ -10,7 +10,11 @@ h1 {
 }
 h2 {
   font-size: 30px;
-  margin: 0 0 15px 0;
+  margin: 0;
+}
+h3 {
+  font-size: 22px;
+  margin: 11px 0 0 0;
 }
 
 a {
@@ -24,12 +28,12 @@ a:hover {
 }
 
 ul {
-  margin: 0 0 15px 0;
+  margin: 15px 0;
 }
 li a {
   padding: 3px;
 }
 
-h2 a {
+h2 a, h3 a {
   text-decoration: none;
 }
